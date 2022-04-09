@@ -1,1 +1,24 @@
-/* No CSS *//*# sourceMappingURL=index.css.map */
+.container-fluid {
+  background-color: black;
+  color: white;
+  padding-top: 2%;
+}
+
+.container-fluid .footer__row {
+  border-top: 1px solid white;
+  padding: 2% 0;
+}
+
+.container-fluid .footer__row .footer__social {
+  text-align: right;
+  padding: 0;
+}
+
+.container-fluid .footer__row .footer__mail {
+  padding: 0;
+}
+
+.container-fluid .footer__row .footer__link {
+  margin-left: 2%;
+}
+/*# sourceMappingURL=index.css.map */
