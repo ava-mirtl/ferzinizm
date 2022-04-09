@@ -1,1 +1,48 @@
-/* No CSS *//*# sourceMappingURL=index.css.map */
+@font-face {
+  font-family: Montserrat;
+  src: url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap"); }
+* {
+  padding: 0;
+  margin: 0; }
+
+.header {
+  background-color: black;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  color: white; }
+
+.header__container {
+  display: flex;
+  margin: 0 2%;
+  align-items: center;
+  justify-content: space-between; }
+
+.header__blok {
+  width: 1150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.menu__list {
+  width: 900px;
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  padding: 0 20px; }
+
+.menu__link {
+  text-decoration: none;
+  color: white; }
+  .menu__link:hover {
+    color: red; }
+
+.header__icon {
+  display: flex; }
+  .header__icon .icon-menu {
+    text-decoration: none;
+    padding: 0px 20px 0px 0px; }
+    .header__icon .icon-menu:last-child {
+      padding: 0; }
+
+/*# sourceMappingURL=index.css.map */
