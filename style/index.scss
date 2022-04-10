@@ -1,6 +1,26 @@
-.header__title{
+.header-title__box{
     display: flex;
+    justify-content: space-evenly;
+    
     span{
         color: red;
     }
-}
+    .header-title__img{
+        max-width: 100%;
+    }
+    .header-title__text{
+        display: flex;
+            flex-direction: column;
+            justify-content: center;
+            justify-content: space-between;
+        }
+      
+        .header-title__button{
+            border-radius: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+       
+    }
+
+
