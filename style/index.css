@@ -1,1 +1,98 @@
-/* No CSS *//*# sourceMappingURL=index.css.map */
+.event {
+  background-color: black;
+  position: absolute;
+  width: 100%;
+}
+  .event__title {
+      font-weight: 700;
+      font-size: 36px;
+      text-align: center;
+      color: #FFFFFF;
+  }
+
+.event-container {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: auto;
+grid-template-areas:
+"bx1 bx2"
+"bx3 bx4";
+gap: 2% 5%;
+padding: 5%;
+}
+
+.event-box {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  align-content: center;
+  width: 100%;
+  padding: 5%;
+}
+
+.event-box__pic {
+  object-fit: cover;
+      width: 100%;
+      height: 100%;
+  }
+
+  .event-box__title {
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 55px;
+  color: #FFFFFF;
+}
+
+.event-box__text {
+  font-family: 'Montserrat';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 25px;
+   line-height: 40px;
+   color: #FFFFFF;
+   padding-top: 3%;
+}
+
+.event-box__btn {
+  width: 309.2px;
+  height: 60px;
+  border-radius: 10px;
+  background: #FFFFFF;
+color: #000000;
+border-radius: 9px;
+border: none;
+text-decoration: none;
+font-weight: 700;
+font-size: 24px;
+line-height: 130%;
+}
+/*
+.event-box__btn:hover {
+  background: #07646e;
+  transition: 1s;
+  cursor: pointer;
+}
+*/
+.box1 {
+  grid-area: bx1;
+}
+.box2 {
+  grid-area: bx2;
+}
+
+.box3 {
+  grid-area: bx3;
+}
+
+.box4 {
+  grid-area: bx4;
+}
+
+.box1,
+.box4 {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  justify-content: center;
+}
+/*# sourceMappingURL=index.css.map */
