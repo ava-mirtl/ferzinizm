@@ -1,3 +1,8 @@
+.container-fluid {
+    background-color: black;
+    color: white;
+    padding-top: 2%;}
+
 .header-title__box{
     display: flex;
     justify-content: space-evenly;
@@ -12,7 +17,7 @@
         display: flex;
             flex-direction: column;
             justify-content: center;
-            justify-content: space-between;
+            justify-content: space-around;
         }
       
         .header-title__button{

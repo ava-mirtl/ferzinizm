@@ -1,3 +1,9 @@
+.container-fluid {
+  background-color: black;
+  color: white;
+  padding-top: 2%;
+}
+
 .header-title__box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -26,9 +32,8 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .header-title__box .header-title__button {
