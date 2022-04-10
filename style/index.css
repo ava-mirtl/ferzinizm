@@ -1,1 +1,10 @@
-/* No CSS *//*# sourceMappingURL=index.css.map */
+.header__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__title span {
+  color: red;
+}
+/*# sourceMappingURL=index.css.map */
