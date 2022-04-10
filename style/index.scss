@@ -1,0 +1,29 @@
+.container-fluid {
+background-color: black;
+color: white;
+padding-top: 2%;
+.footer__row {
+    border-top: 1px solid white;
+    padding: 4% 0;
+    .footer__social{
+        text-align: right;
+        padding: 0;
+    }
+.footer__mail{
+    padding: 0;
+    .footer__email{
+        color: white;
+        text-decoration: none;
+        :hover{
+cursor: pointer;        }
+    }
+}
+    .footer__link{
+        margin-left: 2%;
+    }
+}
+}
+.footer__pic{
+    max-width: 50px;
+    
+}
