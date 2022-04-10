@@ -6,7 +6,7 @@
 
 .container-fluid .footer__row {
   border-top: 1px solid white;
-  padding: 2% 0;
+  padding: 4% 0;
 }
 
 .container-fluid .footer__row .footer__social {
@@ -18,7 +18,20 @@
   padding: 0;
 }
 
+.container-fluid .footer__row .footer__mail .footer__email {
+  color: white;
+  text-decoration: none;
+}
+
+.container-fluid .footer__row .footer__mail .footer__email :hover {
+  cursor: pointer;
+}
+
 .container-fluid .footer__row .footer__link {
   margin-left: 2%;
+}
+
+.footer__pic {
+  max-width: 50px;
 }
 /*# sourceMappingURL=index.css.map */
