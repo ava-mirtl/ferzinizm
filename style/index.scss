@@ -3,9 +3,8 @@
     color: white;
     padding-top: 2%;
 }
-.img{
-    width: 100%;
-}
+
+
 .header-title__box{
     display: flex;
     justify-content: space-evenly;
@@ -13,6 +12,9 @@
   
     span{
         color: red;
+    }
+    .img{
+        width: 100%;
     }
     .header-title__title{
         padding-left: 10%;
@@ -23,9 +25,7 @@
             font-weight: 600;
             font-size: 70px; 
     }
-        .header-title__img{
-        max-width: 100%;
-    }
+      
         .header-title__text{
         display: flex;
             flex-direction: column;
@@ -33,6 +33,7 @@
             justify-content: space-around;
         }
         .header-title__button{
+            width: 60%;
             border-radius: 10px;
             padding-top: 5px;
             padding-bottom: 5px;
@@ -46,6 +47,7 @@
             font-style: normal;
             font-weight: 500;
             font-size: 25px;
+            width: 30vw;
         }
     }
        
