@@ -1,31 +1,54 @@
 .container-fluid {
     background-color: black;
     color: white;
-    padding-top: 2%;}
-
+    padding-top: 2%;
+}
+.img{
+    width: 100%;
+}
 .header-title__box{
     display: flex;
     justify-content: space-evenly;
-    
+    flex-wrap: wrap;
+  
     span{
         color: red;
     }
-    .header-title__img{
+    .header-title__title{
+        padding-left: 10%;
+    }
+        h1{
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 70px; 
+    }
+        .header-title__img{
         max-width: 100%;
     }
-    .header-title__text{
+        .header-title__text{
         display: flex;
             flex-direction: column;
             justify-content: center;
             justify-content: space-around;
         }
-      
         .header-title__button{
             border-radius: 10px;
-            padding-top: 10px;
-            padding-bottom: 10px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 25px;
         }
-       
+        .header-title__blok{
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 25px;
+        }
     }
+       
+    
 
 
