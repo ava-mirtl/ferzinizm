@@ -18,30 +18,26 @@
   align-items: center;
   justify-content: space-between; }
 
-.header__blok {
-  width: 1150px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center; }
-
 .menu__list {
-  width: 900px;
+  width: 1000px;
   display: flex;
   list-style: none;
   justify-content: space-between;
+  margin: 0;
   padding: 0 20px; }
 
 .menu__link {
   text-decoration: none;
   color: white; }
   .menu__link:hover {
+    cursor: pointer;
     color: red; }
 
 .header__icon {
   display: flex; }
   .header__icon .icon-menu {
     text-decoration: none;
-    padding: 0px 20px 0px 0px; }
+    padding: 0px 23px 0px 0px; }
     .header__icon .icon-menu:last-child {
       padding: 0; }
 

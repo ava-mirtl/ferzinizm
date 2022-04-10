@@ -2,6 +2,7 @@
     font-family: Montserrat;
     src: url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 }
+
 * {
     padding: 0;
     margin: 0;
@@ -19,23 +20,19 @@
     align-items: center;
     justify-content: space-between;
 }
-.header__blok {
-    width: 1150px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 .menu__list {
-    width: 900px;
+    width: 1000px;
     display: flex;
     list-style: none;
     justify-content: space-between;
+    margin: 0;
     padding: 0 20px;
 }
 .menu__link {
     text-decoration: none;
     color: white;
     &:hover {
+        cursor: pointer; 
         color: red;
     }
 }
@@ -43,7 +40,7 @@
     display: flex;
     .icon-menu {
         text-decoration: none;
-        padding: 0px 20px 0px 0px;
+        padding: 0px 23px 0px 0px;
         &:last-child {
             padding: 0;
         }
