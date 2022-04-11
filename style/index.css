@@ -4,6 +4,7 @@
   padding-top: 2%;
 }
 
+<<<<<<< HEAD
 .header-title__box {
   display: flex;
   -webkit-box-pack: space-evenly;
@@ -64,4 +65,36 @@
   width: 30vw;
 }
 
+=======
+.container-fluid .footer__row {
+  border-top: 1px solid white;
+  padding: 4% 0;
+}
+
+.container-fluid .footer__row .footer__social {
+  text-align: right;
+  padding: 0;
+}
+
+.container-fluid .footer__row .footer__mail {
+  padding: 0;
+}
+
+.container-fluid .footer__row .footer__mail .footer__email {
+  color: white;
+  text-decoration: none;
+}
+
+.container-fluid .footer__row .footer__mail .footer__email :hover {
+  cursor: pointer;
+}
+
+.container-fluid .footer__row .footer__link {
+  margin-left: 2%;
+}
+
+.footer__pic {
+  max-width: 50px;
+}
+>>>>>>> 312a1797d3633b8622e5b09ba8b5cd6f91ed7524
 /*# sourceMappingURL=index.css.map */
