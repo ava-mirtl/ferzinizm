@@ -10,7 +10,7 @@
 
     .rotate__text,
     .text {
-        @include wh(100%, auto);
+        @include wh(100%, 100%);
         color: black;
         background: white;
         border: 1px solid white;
@@ -85,7 +85,7 @@
 
                     .text__container {
                         @include wh(100%, auto);
-                        padding: 10px;
+                        padding: 20px;
                     }
                 }
             }

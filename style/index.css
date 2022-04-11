@@ -5,7 +5,7 @@
   .container-fluid .rotate__text,
   .container-fluid .text {
     width: 100%;
-    height: auto;
+    height: 100%;
     color: black;
     background: white;
     border: 1px solid white;
@@ -65,7 +65,7 @@
           .container-fluid body .questions__card .rotate .text .text__container {
             width: 100%;
             height: auto;
-            padding: 10px; }
+            padding: 20px; }
   .container-fluid .footer__row {
     border-top: 1px solid white;
     padding: 4% 0; }
