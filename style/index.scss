@@ -2,121 +2,121 @@
     background-color: black;
     color: white;
     padding-top: 2%;
+}
 
-    @mixin wh($w, $h) {
-        width: $w;
-        height: $h;
+@mixin wh($w, $h) {
+    width: $w;
+    height: $h;
+}
+
+.rotate__text,
+.text {
+    @include wh(100%, 100%);
+    color: black;
+    background: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    position: relative;
+    cursor: pointer;
+
+    >p {
+        width: 95%;
     }
 
-    .rotate__text,
-    .text {
-        @include wh(100%, 100%);
-        color: black;
-        background: white;
-        border: 1px solid white;
-        border-radius: 10px;
-        backface-visibility: hidden;
-        position: relative;
-        cursor: pointer;
+    >p::after {
+        content: "";
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 40px;
+        width: 20px;
+        height: 20px;
+        background-image: url(../assets/img/plus.png);
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
 
-        >p {
-            width: 95%;
-        }
+body {
+    margin: 0 auto;
+    padding: 0;
+    font-size: 1em/2em sans-serif;
 
-        >p::after {
-            content: "";
-            display: block;
-            position: absolute;
-            right: 20px;
-            top: 40px;
-            width: 20px;
-            height: 20px;
-            background-image: url(/img/plus.png);
-            background-position: center;
-            background-repeat: no-repeat;
+    .questions__title {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .questions__cards {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .questions__cards-flex1 {
+            margin-right: 30px;
         }
     }
 
-    body {
-        margin: 0 auto;
-        padding: 0;
-        font-size: 1em/2em sans-serif;
+    .questions__card {
+        @include wh(100%, auto);
+        margin: 10px auto;
+        perspective: 1000px;
 
-        .questions__title {
-            font-size: 40px;
-            text-align: center;
+        &:hover .rotate {
+            transform: rotateX(180deg);
         }
 
-        .questions__cards {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
+        .rotate {
+            position: relative;
+            transition: 0.5s;
+            transform-style: preserve-3d;
 
-            .questions__cards-flex1 {
-                margin-right: 30px;
+            .rotate__text {
+                @include wh(100%, auto);
+                padding: 20px;
+                vertical-align: middle;
             }
-        }
 
-        .questions__card {
-            @include wh(100%, auto);
-            margin: 10px auto;
-            perspective: 1000px;
-
-            &:hover .rotate {
+            .text {
+                position: absolute;
+                top: 0;
+                left: 0;
                 transform: rotateX(180deg);
-            }
 
-            .rotate {
-                position: relative;
-                transition: 0.5s;
-                transform-style: preserve-3d;
-
-                .rotate__text {
+                .text__container {
                     @include wh(100%, auto);
                     padding: 20px;
-                    vertical-align: middle;
-                }
-
-                .text {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    transform: rotateX(180deg);
-
-                    .text__container {
-                        @include wh(100%, auto);
-                        padding: 20px;
-                    }
                 }
             }
         }
     }
+}
 
-    .footer__row {
-        border-top: 1px solid white;
-        padding: 4% 0;
+.footer__row {
+    border-top: 1px solid white;
+    padding: 4% 0;
 
-        .footer__social {
-            text-align: right;
-            padding: 0;
-        }
+    .footer__social {
+        text-align: right;
+        padding: 0;
+    }
 
-        .footer__mail {
-            padding: 0;
+    .footer__mail {
+        padding: 0;
 
-            .footer__email {
-                color: white;
-                text-decoration: none;
+        .footer__email {
+            color: white;
+            text-decoration: none;
 
-                :hover {
-                    cursor: pointer;
-                }
+            :hover {
+                cursor: pointer;
             }
         }
+    }
 
-        .footer__link {
-            margin-left: 2%;
-        }
+    .footer__link {
+        margin-left: 2%;
     }
 }
 
