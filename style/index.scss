@@ -18,12 +18,16 @@
         position: relative;
         cursor: pointer;
 
+        >p {
+            width: 95%;
+        }
+
         >p::after {
             content: "";
             display: block;
             position: absolute;
             right: 20px;
-            top: 50px;
+            top: 40px;
             width: 20px;
             height: 20px;
             background-image: url(/img/plus.png);

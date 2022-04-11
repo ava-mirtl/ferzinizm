@@ -10,13 +10,16 @@
     backface-visibility: hidden;
     position: relative;
     cursor: pointer; }
+    .container-fluid .rotate__text > p,
+    .container-fluid .text > p {
+      width: 95%; }
     .container-fluid .rotate__text > p::after,
     .container-fluid .text > p::after {
       content: "";
       display: block;
       position: absolute;
       right: 20px;
-      top: 50px;
+      top: 40px;
       width: 20px;
       height: 20px;
       background-image: url(/img/plus.png);
