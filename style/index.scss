@@ -10,7 +10,7 @@
 
     .rotate__text,
     .text {
-        @include wh(300px, 100px);
+        @include wh(100%, auto);
         background: #fff;
         border: 1px solid #ccc;
         border-radius: 10px;
@@ -55,7 +55,7 @@
         }
 
         .questions__card {
-            @include wh(300px, auto);
+            @include wh(100%, auto);
             margin: 10px auto;
             perspective: 1000px;
 
@@ -69,7 +69,7 @@
                 transform-style: preserve-3d;
 
                 .rotate__text {
-                    @include wh(auto, auto);
+                    @include wh(100%, auto);
                     padding: 20px;
                     vertical-align: middle;
                 }
@@ -81,7 +81,7 @@
                     transform: rotateX(180deg);
 
                     .text__pd {
-                        @include wh(300px, 100px);
+                        @include wh(100%, auto);
                         padding: 10px;
                     }
                 }
