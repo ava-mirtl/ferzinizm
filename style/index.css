@@ -4,7 +4,6 @@
   padding-top: 2%;
 }
 
-<<<<<<< HEAD
 .header-title__box {
   display: flex;
   -webkit-box-pack: space-evenly;
@@ -65,7 +64,7 @@
   width: 30vw;
 }
 
-=======
+
 .container-fluid .footer__row {
   border-top: 1px solid white;
   padding: 4% 0;
@@ -96,5 +95,5 @@
 .footer__pic {
   max-width: 50px;
 }
->>>>>>> 312a1797d3633b8622e5b09ba8b5cd6f91ed7524
+
 /*# sourceMappingURL=index.css.map */

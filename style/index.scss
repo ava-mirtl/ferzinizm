@@ -1,5 +1,4 @@
 .container-fluid {
-<<<<<<< HEAD
     background-color: black;
     color: white;
     padding-top: 2%;
@@ -11,9 +10,6 @@
     justify-content: space-evenly;
     flex-wrap: wrap;
   
-    span{
-        color: red;
-    }
     .img{
         width: 100%;
     }
@@ -51,14 +47,8 @@
             width: 30vw;
         }
     }
-       
     
-
-
-=======
-background-color: black;
-color: white;
-padding-top: 2%;
+       
 .footer__row {
     border-top: 1px solid white;
     padding: 4% 0;
@@ -79,9 +69,9 @@ cursor: pointer;        }
         margin-left: 2%;
     }
 }
-}
+
 .footer__pic{
     max-width: 50px;
     
 }
->>>>>>> 312a1797d3633b8622e5b09ba8b5cd6f91ed7524
+
