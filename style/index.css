@@ -34,4 +34,116 @@
 .footer__pic {
   max-width: 50px;
 }
+
+.msg {
+  position: relative;
+  max-width: 300px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  text-align: center;
+  line-height: 25px;
+  padding: 2% 5%;
+  margin: 5% 0;
+  background-color: #fff;
+  border-radius: 20px;
+  color: black;
+}
+
+.bot__message-1:before {
+  content: " ";
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: -40px;
+  top: 60px;
+  border: 20px solid;
+  border-color: transparent #fff #fff transparent;
+}
+
+.bot__message-2:before {
+  content: " ";
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: -40px;
+  top: 70px;
+  border: 20px solid;
+  border-color: transparent #fff #fff transparent;
+}
+
+.bot__message-3:before {
+  content: " ";
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: -22px;
+  top: 27px;
+  border: 15px solid;
+  border-color: #fff #fff transparent transparent;
+}
+
+.bot__message-4:before {
+  content: " ";
+  position: absolute;
+  width: 0;
+  height: 0;
+  right: -35px;
+  top: 27px;
+  border: 25px solid;
+  border-color: transparent transparent #fff #fff;
+}
+
+.bot__message-5:before {
+  content: " ";
+  position: absolute;
+  width: 0;
+  height: 0;
+  right: -20px;
+  top: 27px;
+  border: 15px solid;
+  border-color: transparent transparent #fff #fff;
+}
+
+.bot__message-6:before {
+  content: " ";
+  position: absolute;
+  width: 0;
+  height: 0;
+  right: -35px;
+  top: 45px;
+  border: 25px solid;
+  border-color: transparent transparent #fff #fff;
+}
+
+.bot__message-7:before {
+  content: " ";
+  position: absolute;
+  width: 0;
+  height: 0;
+  right: -20px;
+  top: 27px;
+  border: 25px solid;
+  border-color: #fff transparent transparent transparent;
+}
+
+.bot__btn {
+  width: 400px;
+  height: 70px;
+  border-radius: 15px;
+  margin-top: 50px;
+  margin-bottom: 60px;
+  font-size: 25px;
+  border: none;
+  text-align: center;
+}
+
+.container__bot-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 /*# sourceMappingURL=index.css.map */
