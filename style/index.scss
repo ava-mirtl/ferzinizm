@@ -80,7 +80,7 @@
                     left: 0;
                     transform: rotateX(180deg);
 
-                    .text__pd {
+                    .text__container {
                         @include wh(100%, auto);
                         padding: 10px;
                     }
