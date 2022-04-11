@@ -2,6 +2,9 @@
     font-family: Montserrat;
     src: url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 }
+
+$fz: 25px;
+$fw: 500;
 .container-fluid {
     background-color: black;
     color: white;
@@ -39,19 +42,19 @@
             padding-bottom: 5px;
             font-family: 'Montserrat';
             font-style: normal;
-            font-weight: 500;
-            font-size: 25px;
+            font-weight: $fw;
+            font-size: $fz;
         }
         .header-title__blok{
             font-family: 'Montserrat';
             font-style: normal;
-            font-weight: 500;
-            font-size: 25px;
+            font-weight: $fw;
+            font-size: $fz;
             width: 30vw;
         }
-      
-     
+       
     }
+ 
     
 .footer__row {
     border-top: 1px solid white;
