@@ -1,9 +1,12 @@
+@font-face {
+    font-family: Montserrat;
+    src: url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+}
 .container-fluid {
     background-color: black;
     color: white;
     padding-top: 2%;
 }
-
 
 .header-title__box{
     display: flex;
