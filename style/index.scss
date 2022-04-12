@@ -145,13 +145,30 @@
 
 		&__text p {
                   margin-bottom: 5%;
-
             }
+
              // .item__text p:last child
 
 		&__text p:last-child {
                   margin-bottom: 0%;
-
             }
+
+}
+
+/* unvisited link*/
+a:link {
+      color: blue;
+}
+/* visited link*/
+a:visited {
+      color: red;
+}
+/* mouse over*/
+a:hover {
+      color: green;
+}
+/* selected link*/
+a:active {
+      color: yellow;
 }
 
