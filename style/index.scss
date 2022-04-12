@@ -33,7 +33,7 @@
 		&__row {
                   display: flex;
                   flex-wrap: wrap;
-                  margin: 0% -5%;
+                 
 		}
 
             // .columns__row1
@@ -41,7 +41,7 @@
 		&__row1 {
                   display: flex;
                   flex-wrap: wrap;
-                  margin: 0% -5%;
+                 
 		}
 
 		// .columns__column
@@ -94,15 +94,13 @@
 		// .item__image
 
 		&__image {
-                  flex: 0 0 auto;
-                               
-                  
+                  flex: 0 0 auto;                                                
 		}
 
             // .item__image1
 
 		&__image1 {
-                  flex: 0 0  auto;                                                   
+                  flex: 0 0 auto;                                            
 		}
 
 		// .item__body
@@ -155,175 +153,5 @@
                   margin-bottom: 0%;
 
             }
-}
-
-.main-event {
-           
-		// .main-event__body
-
-		&__body {
-            background-color: black;
-            position: absolute;
-            padding: 5% 0% 5% 0%;
-            max-width:100%;
-            height: auto;
-		}
-
-		// .main-event__title
-
-		&__title {
-            display: flex;
-            direction:row;
-            justify-content: center; 
-		}
-
-		// .main-event__title-text
-
-		&__title-text {
-            position: absolute;
-            font-family: 'Montserrat';
-            font-style: normal;
-            font-weight: 600;
-            font-size: 6vw;
-            line-height: 1em;
-            color: #FFFFFF;
-		}
-}
-.container-event {
-    display:flex;
-    margin-top: 12%;
-    width: 100%;
-    height: auto;
-
-		// .container-event__columns
-
-		&__columns {
-            display: flex;
-            direction: column;
-            gap:3%;
-            flex: 0 1 100%;
-		}
-
-		// .container-event__column1
-
-		&__column1 {
-            display:flex;
-            direction:column;
-            margin-left:8%;
-		}
-
-		// .container-event__column2
-
-		&__column2 {
-            display:flex;
-            direction:column;
-            margin-right:8%;
-		}
-}
-
-.event-box {
-
-		// .event-box__pic1
-
-		&__pic1 {
-                  max-width: 100%;
-                  height: auto;
-                  margin: 5% 0% 2% 0%;
-              
-		}
-            // .event-box__pic2
-
-            &__pic2 {
-                  max-width: 100%;
-                  height: auto; 
-                  margin: 10% 0% 0% 0%;
-            }
-
-
-		// .event-box__title1
-
-		&__title1 {
-            max-width: 100%;
-            max-height: auto;
-            font-family: 'Montserrat';
-            font-style: normal;
-            font-weight: 500;
-            font-size: 3vw;
-            line-height: .5em;
-            color: #FFFFFF;
-            margin-top: 5%;
-		}
-
-            // .event-box__title2
-
-            &__title2{
-            max-width: 100%;
-            max-height: auto;
-            font-family: 'Montserrat';
-            font-style: normal;
-            font-weight: 500;
-            font-size: 3vw;
-            line-height: .5em;
-            color: #FFFFFF;  
-            margin-top: 5%;  
-            }
-
-		// .event-box__text
-
-		&__text {
-            max-width: 80%;
-            max-height: auto;
-            font-family: 'Montserrat';
-            font-style: normal;
-            font-weight: 500;
-            font-size: 2vw;
-            line-height: 1.2em;
-            color: #FFFFFF;
-            padding-top: 10%;
-            text-align:left;         
-		}
-
-            &__text p{
-                  margin:0% 0% 3% 0%;
-            }
-
-            &__text p:last-child{
-            margin:0;
-            }
-		// .event-box__btn
-
-		&__btn1 {
-            max-width: 50%;
-            width:100%;
-            height: 3%;
-            border-radius: .5em;
-            margin-top: 3%;
-            font-size: 2vw;
-            display: block;
-            margin-top: 20%;
-		}
-
-
-            &__btn2 {
-                  max-width: 50%;
-                  width:100%;
-                  height: 3%;
-                  border-radius: .5em;
-                  margin-top: 3%;
-                  font-size: 2vw;
-                  display: block;
-                  margin-top:8%;
-                  
-
-                  }
-}
-.event-box2 {
-      width: 100%;
-      height: 100%;  
-    
-}
-.event-box1 {
-      width: 100%;
-      height: 100%;       
 }
 

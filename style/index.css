@@ -30,7 +30,6 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 0% -5%;
 }
 
 .columns__row1 {
@@ -39,7 +38,6 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 0% -5%;
 }
 
 .columns__column {
@@ -86,8 +84,8 @@
 
 .item__image1 {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0  auto;
-          flex: 0 0  auto;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
 }
 
 .item__body {
@@ -117,7 +115,7 @@
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
-  font-size: 1.8vw;
+  font-size: 1.6vw;
   line-height: 1.2em;
   color: #FFFFFF;
   padding-top: 10%;
@@ -132,3 +130,5 @@
   margin-bottom: 0%;
 }
 
+
+/*# sourceMappingURL=index.css.map */
