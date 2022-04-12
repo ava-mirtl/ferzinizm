@@ -65,44 +65,51 @@ body .questions__cards .questions__cards-flex1 {
   margin-right: 30px;
 }
 
-body .questions__card {
+@media screen and (max-width: 980px) {
+  body .questions__cards .questions__cards-flex1 {
+    margin-right: 0;
+    margin-bottom: -10px;
+  }
+}
+
+body .questions__cards .questions__card {
   width: 100%;
   height: auto;
   margin: 10px auto;
   perspective: 1000px;
 }
 
-body .questions__card:active .rotate {
+body .questions__cards .questions__card:active .rotate {
   transform: rotateX(180deg);
 }
 
-body .questions__card .rotate {
+body .questions__cards .questions__card .rotate {
   position: relative;
   transition: 0.5s;
   transform-style: preserve-3d;
 }
 
-body .questions__card .rotate .rotate__text {
+body .questions__cards .questions__card .rotate .rotate__text {
   width: 100%;
   height: auto;
   padding: 20px;
   vertical-align: middle;
 }
 
-body .questions__card .rotate .text {
+body .questions__cards .questions__card .rotate .text {
   position: absolute;
   top: 0;
   left: 0;
   transform: rotateX(180deg);
 }
 
-body .questions__card .rotate .text .text__container {
+body .questions__cards .questions__card .rotate .text .text__container {
   width: 100%;
   height: 100%;
   padding: 20px;
 }
 
-body .questions__card .rotate .text .text__container>p {
+body .questions__cards .questions__card .rotate .text .text__container>p {
   width: 100%;
   height: 100%;
   margin-bottom: 0;
