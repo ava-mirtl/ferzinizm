@@ -79,6 +79,10 @@ body .questions__cards .questions__card {
   perspective: 1000px;
 }
 
+body .questions__cards .questions__card:hover .rotate {
+  transform: rotateX(180deg);
+}
+
 body .questions__cards .questions__card:active .rotate {
   transform: rotateX(180deg);
 }

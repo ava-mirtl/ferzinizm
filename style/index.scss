@@ -78,6 +78,10 @@ body {
             margin: 10px auto;
             perspective: 1000px;
 
+            &:hover .rotate {
+                transform: rotateX(180deg);
+            }
+
             &:active .rotate {
                 transform: rotateX(180deg);
             }
