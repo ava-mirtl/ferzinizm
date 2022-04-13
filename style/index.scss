@@ -54,6 +54,175 @@ $fw: 500;
         }
        
     }
+/* Модальное окно */
+.modal-window {
+    display: inline-block;
+}
+
+.modal-window>.modal-trigger {
+    display: none;
+}
+
+.modal-window>.modal-trigger~.modal-overlay {
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    position: fixed;
+    visibility: hidden;
+    transition: opacity 0.3s;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-window>.modal-trigger~.modal-container {
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    z-index: 110;
+    position: fixed;
+    visibility: hidden;
+    transition: opacity 0.3s;
+    transform: translate(-50%, -50%);
+}
+
+.modal-window>.modal-trigger:checked~.modal-overlay,
+.modal-window>.modal-trigger:checked~.modal-container {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Кнопка */
+.btn-modal {
+    color: black;
+    cursor: pointer;
+    line-height: 3rem;
+    padding: 5px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.btn-modal:hover {
+    background-color: #527c82;
+}
+
+/* Содержимое модального окна */
+.modal-content {
+    overflow: hidden;
+    /*Для прокрутки в модальном окне надо поменять на overflow: auto и добавить высоту окна*/
+    background-color: #fff;
+}
+
+.modal-content .modal-content-header,
+.modal-content .modal-content-body {
+    padding: 1rem 2rem;
+}
+
+/* Кнопка Закрыть */
+.modal-content .modal-content-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content .modal-content-footer .item {
+    flex: 1;
+    padding: 1rem;
+    text-align: center;
+}
+
+.modal-content .modal-content-footer .item.action {
+    background-color: #83bec5;
+    cursor: pointer;
+}
+
+.modal-content .modal-content-footer .item.action:hover {
+    background-color: #aed9e1;
+}
+
+label {
+    display: block;
+    letter-spacing: 4px;
+    padding-top: 30px;
+    text-align: center;
+}
+
+label .label-text {
+    color: #9B9B9B;
+    cursor: text;
+    font-size: 15px;
+    line-height: 20px;
+    text-transform: uppercase;
+    -moz-transform: translateY(-34px);
+    -ms-transform: translateY(-34px);
+    -webkit-transform: translateY(-34px);
+    transform: translateY(-34px);
+    transition: all 0.3s;
+}
+
+/* анимация смещения и изменения цвета текста label */
+label input:focus+.label-text {
+    color: #F0F0F0;
+    font-size: 13px;
+    margin-top: 10px;
+    -moz-transform: translateY(-74px);
+    -ms-transform: translateY(-74px);
+    -webkit-transform: translateY(-74px);
+    transform: translateY(-74px);
+}
+
+label input {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px solid #4A4A4A;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 1px;
+    outline: 0;
+    padding: 5px 20px;
+    text-align: center;
+    transition: all 0.3s;
+    width: 200px;
+}
+
+/* анимация, когда пользователь кликает по полю ввода */
+label input:focus {
+    max-width: 100%;
+    width: 400px;
+}
+
+label input:valid+.label-text {
+    font-size: 13px;
+    -moz-transform: translateY(-74px);
+    -ms-transform: translateY(-74px);
+    -webkit-transform: translateY(-74px);
+    transform: translateY(-74px);
+}
+
+/* стили кнопки */
+button {
+    background: transparent;
+    color: #F0F0F0;
+    border: 2px solid black;
+    font-size: 10px;
+    letter-spacing: 2px;
+    padding: 20px 75px;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: inline-block;
+    margin: 15px 30px;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+button:hover,
+button:focus {
+    background-color: white;
+    color: #333333;
+}
+    
  
     
 .footer__row {

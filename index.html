@@ -33,10 +33,39 @@
                         действительно рады. А еще мы организуем классные мероприятия и пробуем новые форматы
                         игры...Присоеденяйся, мы тебя ждали!</p>
 
+                    <div class="modal-window">
+                        <input type="checkbox" class="modal-trigger" id="modal-window">
+                        <label class="modal-overlay" for="modal-window"></label>
+                        <label class="btn-modal" for="modal-window">
+                            Вступить в клуб
+                        </label>
+                        <!-- Модальное окно -->
+                        <div class="modal-container">
+                            <!-- Содержимое модального окна -->
+                            <div class="modal-content">
+                                <div class="modal-content-body">
+                                    <form>
+                                        <label>
+                                            <input name="name" id="name" type="text" required />
+                                            <div class="label-text">Full Name</div>
+                                        </label>
+                                        <label>
+                                            <input type="email" name="email" id="email" required />
+                                            <div class="label-text">Email</div>
+                                        </label>
+                                        <label>
+                                            <input type="tel" name="phone" id="phone" required />
+                                            <div class="label-text">Phone Number</div>
+                                        </label>
+                                        <button type="submit" value="Submit">Отправить</button>
+                                    </form>
+                                </div>
+
+                            </div>
+                            <!-- Конец содержимого модального окна -->
+                        </div>
+                    </div>
                 </div>
-                <button class="header-title__button">Вступить в клуб</button>
-            </div>
-        </div>
     </header>
     <main class="main"></main>
     <footer class="footer container-fluid">

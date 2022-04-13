@@ -1,3 +1,9 @@
+@charset "UTF-8";
+@font-face {
+  font-family: Montserrat;
+  src: url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+}
+
 .container-fluid {
   background-color: black;
   color: white;
@@ -5,16 +11,14 @@
 }
 
 .header-title__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-}
-
-.header-title__box span {
-  color: red;
+      flex-wrap: wrap;
 }
 
 .header-title__box .img {
@@ -33,16 +37,18 @@
 }
 
 .header-title__box .header-title__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-pack: distribute;
-  justify-content: space-around;
+      justify-content: space-around;
 }
 
 .header-title__box .header-title__button {
@@ -64,35 +70,209 @@
   width: 30vw;
 }
 
-.container-fluid .footer__row {
+/* Модальное окно */
+.modal-window {
+  display: inline-block;
+}
+
+.modal-window > .modal-trigger {
+  display: none;
+}
+
+.modal-window > .modal-trigger ~ .modal-overlay {
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  position: fixed;
+  visibility: hidden;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-window > .modal-trigger ~ .modal-container {
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  z-index: 110;
+  position: fixed;
+  visibility: hidden;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.modal-window > .modal-trigger:checked ~ .modal-overlay,
+.modal-window > .modal-trigger:checked ~ .modal-container {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Кнопка */
+.btn-modal {
+  color: black;
+  cursor: pointer;
+  line-height: 3rem;
+  padding: 5px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.btn-modal:hover {
+  background-color: #527c82;
+}
+
+/* Содержимое модального окна */
+.modal-content {
+  overflow: hidden;
+  /*Для прокрутки в модальном окне надо поменять на overflow: auto и добавить высоту окна*/
+  background-color: #fff;
+}
+
+.modal-content .modal-content-header,
+.modal-content .modal-content-body {
+  padding: 1rem 2rem;
+}
+
+/* Кнопка Закрыть */
+.modal-content .modal-content-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.modal-content .modal-content-footer .item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 1rem;
+  text-align: center;
+}
+
+.modal-content .modal-content-footer .item.action {
+  background-color: #83bec5;
+  cursor: pointer;
+}
+
+.modal-content .modal-content-footer .item.action:hover {
+  background-color: #aed9e1;
+}
+
+label {
+  display: block;
+  letter-spacing: 4px;
+  padding-top: 30px;
+  text-align: center;
+}
+
+label .label-text {
+  color: #9B9B9B;
+  cursor: text;
+  font-size: 15px;
+  line-height: 20px;
+  text-transform: uppercase;
+  -webkit-transform: translateY(-34px);
+  transform: translateY(-34px);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+/* анимация смещения и изменения цвета текста label */
+label input:focus + .label-text {
+  color: #F0F0F0;
+  font-size: 13px;
+  margin-top: 10px;
+  -webkit-transform: translateY(-74px);
+  transform: translateY(-74px);
+}
+
+label input {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px solid #4A4A4A;
+  color: white;
+  font-size: 20px;
+  letter-spacing: 1px;
+  outline: 0;
+  padding: 5px 20px;
+  text-align: center;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  width: 200px;
+}
+
+/* анимация, когда пользователь кликает по полю ввода */
+label input:focus {
+  max-width: 100%;
+  width: 400px;
+}
+
+label input:valid + .label-text {
+  font-size: 13px;
+  -webkit-transform: translateY(-74px);
+  transform: translateY(-74px);
+}
+
+/* стили кнопки */
+button {
+  background: transparent;
+  color: #F0F0F0;
+  border: 2px solid black;
+  font-size: 10px;
+  letter-spacing: 2px;
+  padding: 20px 75px;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: inline-block;
+  margin: 15px 30px;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+button:hover,
+button:focus {
+  background-color: white;
+  color: #333333;
+}
+
+.footer__row {
   border-top: 1px solid white;
   padding: 4% 0;
 }
 
-.container-fluid .footer__row .footer__social {
+.footer__row .footer__social {
   text-align: right;
   padding: 0;
 }
 
-.container-fluid .footer__row .footer__mail {
+.footer__row .footer__mail {
   padding: 0;
 }
 
-.container-fluid .footer__row .footer__mail .footer__email {
+.footer__row .footer__mail .footer__email {
   color: white;
   text-decoration: none;
 }
 
-.container-fluid .footer__row .footer__mail .footer__email :hover {
+.footer__row .footer__mail .footer__email :hover {
   cursor: pointer;
 }
 
-.container-fluid .footer__row .footer__link {
+.footer__row .footer__link {
   margin-left: 2%;
 }
 
 .footer__pic {
   max-width: 50px;
 }
-
 /*# sourceMappingURL=index.css.map */
