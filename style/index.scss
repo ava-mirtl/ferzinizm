@@ -120,7 +120,7 @@ $fw: 500;
         }
     }
 
-/* Модальное окно */
+// Модальное окно
 .modal-window {
     display: inline-block;
 }
@@ -159,7 +159,7 @@ $fw: 500;
     visibility: visible;
 }
 
-/* Кнопка */
+//Кнопка 
 .btn-modal {
     color: black;
     cursor: pointer;
@@ -177,19 +177,12 @@ $fw: 500;
     background-color: #979797;
 }
 
-/* Содержимое модального окна */
-.modal-content {
-    overflow: hidden;
-    /*Для прокрутки в модальном окне надо поменять на overflow: auto и добавить высоту окна*/
-    background-color: #fff;
-}
-
 .modal-content .modal-content-header,
 .modal-content .modal-content-body {
     padding: 1rem 2rem;
 }
 
-/* Кнопка Закрыть */
+//Кнопка Закрыть 
 .modal-content .modal-content-footer {
     display: flex;
     align-items: center;
@@ -261,7 +254,7 @@ label input {
     width: 200px;
 }
 
-/* анимация, когда пользователь кликает по полю ввода */
+//анимация, когда пользователь кликает по полю ввода
 label input:focus {
     max-width: 100%;
     width: 400px;
@@ -275,7 +268,7 @@ label input:valid+.label-text {
     transform: translateY(-74px);
 }
 
-/* стили кнопки */
+// стили кнопки 
 button {
     background: transparent;
     color: #F0F0F0;
