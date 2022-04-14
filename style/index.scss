@@ -140,6 +140,11 @@ $fw: 500;
 .modal-content .modal-content-footer .item.action:hover {
     background-color: #aed9e1;
 }
+.header__form{
+    display: flex;
+    flex-direction: column;
+   
+}
 
 label {
     display: block;
@@ -176,7 +181,7 @@ label input {
     background-color: transparent;
     border: 0;
     border-bottom: 2px solid #4A4A4A;
-    color: white;
+    color:black;
     font-size: 20px;
     letter-spacing: 1px;
     outline: 0;
