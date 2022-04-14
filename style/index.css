@@ -32,11 +32,12 @@
   text-align: center;
 }
 
-.header-title__box h2 {
+.header-title__box .header-title-tit {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
-  font-size: 30pt;
+  font-size: 60px;
+  margin-bottom: 0px;
 }
 
 .header-title__box .header-title__text {
@@ -67,10 +68,6 @@
 }
 
 .header-title__box .header-title__blok {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -79,6 +76,60 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.header-title__box .header-title__txt {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  padding-top: 25px;
+  margin-bottom: 0px;
+}
+
+@media (max-width: 1000px) {
+  .header-title__box .header-title-tit {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 50px;
+  }
+  .header-title__box .header-title__blok,
+  .header-title__box .header-title__text {
+    width: 50vw;
+    padding-top: 30px;
+    padding-top: 0px;
+  }
+}
+
+@media (max-width: 959px) {
+  .header-title__box .header-title-tit {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 50px;
+  }
+  .header-title__box .header-title__blok,
+  .header-title__box .header-title__text {
+    width: 70vw;
+    padding-top: 30px;
+    padding-top: 0px;
+  }
+}
+
+@media (max-width: 685px) {
+  .header-title__box .header-title-tit {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+  }
+  .header-title__box .header-title__blok,
+  .header-title__box .header-title__text {
+    width: 70vw;
+    padding-top: 30px;
+    padding-top: 0px;
+  }
 }
 
 /* Модальное окно */
@@ -134,7 +185,7 @@
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .btn-modal:hover {
@@ -268,6 +319,12 @@ button:hover,
 button:focus {
   background-color: white;
   color: #333333;
+}
+
+@media (max-width: 490px) {
+  .btn-modal {
+    font-size: 20px;
+  }
 }
 
 .footer__row {

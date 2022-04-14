@@ -18,6 +18,7 @@ $fw: 500;
     justify-content: space-evenly;
     flex-wrap: wrap;
   
+
     .img{
         width: 100%;
     }
@@ -27,13 +28,14 @@ $fw: 500;
         padding-left: 0px;
         text-align: center;
        
-        
     }
-        h2{
+    
+    .header-title-tit{
             font-family: 'Montserrat';
             font-style: normal;
             font-weight: 600;
-            font-size: 30pt; 
+            font-size: 60px; 
+            margin-bottom: 0px;
     }
       
         .header-title__text{
@@ -42,7 +44,7 @@ $fw: 500;
             justify-content: space-around;
             align-items: center;
             width: 45%;
-           
+             
         }
         .header-title__button{
             width: 60%;
@@ -55,18 +57,69 @@ $fw: 500;
             font-size: $fz;
         }
         .header-title__blok{
-            font-family: 'Montserrat';
-            font-style: normal;
-            font-weight: $fw;
-            font-size: $fz;
-           
             display: flex;
             justify-content: space-around;
             align-items: center;
            
         }
-       
+        .header-title__txt{
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: $fw;
+            font-size: $fz;
+            padding-top: 25px;
+            margin-bottom: 0px;
+        }
+        @media (max-width: 1000px) {
+            .header-title-tit{
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 50px; 
+        }
+        .header-title__blok,
+        .header-title__text{
+            width: 50vw;
+            padding-top: 30px;
+            padding-top: 0px;
+            
+        }
     }
+        
+        @media (max-width: 959px) {
+            .header-title-tit{
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 50px; 
+        }
+        .header-title__blok,
+        .header-title__text{
+            width: 70vw;
+            padding-top: 30px;
+            padding-top: 0px;
+            
+        }
+         
+        }
+        @media (max-width: 685px) {
+            .header-title-tit{
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 40px; 
+        }
+        .header-title__blok,
+        .header-title__text{
+            width: 70vw;
+            padding-top: 30px;
+            padding-top: 0px;
+            
+        }
+          
+        }
+    }
+
 /* Модальное окно */
 .modal-window {
     display: inline-block;
@@ -117,7 +170,7 @@ $fw: 500;
     font-family: 'Montserrat';
             font-style: normal;
             font-weight: $fw;
-            font-size: $fz;
+            font-size: 20px;
 }
 
 .btn-modal:hover {
@@ -244,8 +297,15 @@ button:focus {
     background-color: white;
     color: #333333;
 }
+@media(max-width: 490px) {
+    .btn-modal{
+        font-size: 20px;
+
+    }
     
- 
+}
+
+    
     
 .footer__row {
     border-top: 1px solid white;
