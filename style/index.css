@@ -4,7 +4,8 @@
   src: url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 }
 
-.container-fluid {
+.container-box {
+  padding: 0 15px;
   background-color: black;
   color: white;
   padding-top: 2%;
@@ -29,14 +30,13 @@
   padding-left: 10%;
   padding-left: 0px;
   text-align: center;
-  width: 60%;
 }
 
-.header-title__box h1 {
+.header-title__box h2 {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
-  font-size: 70px;
+  font-size: 30pt;
 }
 
 .header-title__box .header-title__text {
@@ -52,6 +52,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 45%;
 }
 
 .header-title__box .header-title__button {
@@ -70,7 +71,6 @@
   font-style: normal;
   font-weight: 500;
   font-size: 25px;
-  width: 30vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -131,10 +131,14 @@
   padding: 5px;
   background-color: white;
   border-radius: 10px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
 }
 
 .btn-modal:hover {
-  background-color: #527c82;
+  background-color: #979797;
 }
 
 /* Содержимое модального окна */

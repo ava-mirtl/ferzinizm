@@ -5,7 +5,9 @@
 
 $fz: 25px;
 $fw: 500;
-.container-fluid {
+.container-box {
+    padding: 0 15px;
+  
     background-color: black;
     color: white;
     padding-top: 2%;
@@ -24,14 +26,14 @@ $fw: 500;
         padding-left: 10%;
         padding-left: 0px;
         text-align: center;
-        width: 60%;
+       
         
     }
         h2{
             font-family: 'Montserrat';
             font-style: normal;
             font-weight: 600;
-            font-size: 70px; 
+            font-size: 30pt; 
     }
       
         .header-title__text{
@@ -39,6 +41,7 @@ $fw: 500;
             flex-direction: column;
             justify-content: space-around;
             align-items: center;
+            width: 45%;
            
         }
         .header-title__button{
@@ -56,7 +59,7 @@ $fw: 500;
             font-style: normal;
             font-weight: $fw;
             font-size: $fz;
-            width: 30vw;
+           
             display: flex;
             justify-content: space-around;
             align-items: center;
@@ -111,10 +114,14 @@ $fw: 500;
     padding: 5px;
     background-color: white;
     border-radius: 10px;
+    font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: $fw;
+            font-size: $fz;
 }
 
 .btn-modal:hover {
-    background-color: #527c82;
+    background-color: #979797;
 }
 
 /* Содержимое модального окна */
