@@ -20,9 +20,14 @@ $fw: 500;
         width: 100%;
     }
     .header-title__title{
+        
         padding-left: 10%;
+        padding-left: 0px;
+        text-align: center;
+        width: 60%;
+        
     }
-        h1{
+        h2{
             font-family: 'Montserrat';
             font-style: normal;
             font-weight: 600;
@@ -32,8 +37,9 @@ $fw: 500;
         .header-title__text{
         display: flex;
             flex-direction: column;
-            justify-content: center;
             justify-content: space-around;
+            align-items: center;
+           
         }
         .header-title__button{
             width: 60%;
@@ -51,6 +57,10 @@ $fw: 500;
             font-weight: $fw;
             font-size: $fz;
             width: 30vw;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+           
         }
        
     }
