@@ -25,7 +25,6 @@ $fontFam: 'Montserrat';
     border-radius: 10px;
     backface-visibility: hidden;
     position: relative;
-    cursor: pointer;
 
     >p {
         width: 95%;
@@ -35,13 +34,39 @@ $fontFam: 'Montserrat';
         content: "";
         display: block;
         position: absolute;
-        right: 20px;
-        top: 40px;
+        right: calc(10% / 3);
+        top: calc(80% / 2);
         width: 20px;
         height: 20px;
-        background-image: url(../assets/img/plus.png);
+        background-image: url(../img/plus.png);
         background-position: center;
         background-repeat: no-repeat;
+    }
+}
+
+.card-2 .rotate .text .text__container {
+    >p {
+        font-size: 15px;
+    }
+
+    @media screen and (max-width: 480px) {
+        >p {
+            font-size: 13px;
+        }
+    }
+
+    @media screen and (min-width: 481px) and (max-width: 1100px) {
+        >p {
+            font-size: 14px;
+        }
+    }
+}
+
+.card-7 .rotate .text .text__container {
+    @media screen and (max-width: 480px) {
+        >p {
+            font-size: 14px;
+        }
     }
 }
 
@@ -49,7 +74,7 @@ body {
     margin: 0 auto;
     padding: 0;
     font-family: $fontFam;
-    font-size: 1em/2em sans-serif;
+    cursor: default;
 
     .questions__title {
         font-size: 40px;
@@ -63,13 +88,39 @@ body {
         justify-content: center;
         flex-wrap: wrap;
 
-        .questions__cards-flex1 {
-            margin-right: 30px;
+        a {
+            text-decoration: none;
+            color: #F64B35;
+            cursor: pointer;
         }
+
+        .questions__cards-flex1 {
+            margin-right: 2%;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            flex-basis: 40%;
+        }
+
         @media screen and (max-width: 980px) {
             .questions__cards-flex1 {
                 margin-right: 0;
-                margin-bottom: -10px;
+                flex-basis: auto;
+                width: 90%;
+            }
+        }
+
+        .questions__cards-flex2 {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            flex-basis: 40%;
+        }
+
+        @media screen and (max-width: 980px) {
+            .questions__cards-flex2 {
+                flex-basis: auto;
+                width: 90%;
             }
         }
 
@@ -95,6 +146,10 @@ body {
                     @include wh(100%, auto);
                     padding: 20px;
                     vertical-align: middle;
+
+                    >p {
+                        font-size: 28px;
+                    }
                 }
 
                 .text {
@@ -105,7 +160,7 @@ body {
 
                     .text__container {
                         @include wh(100%, 100%);
-                        padding: 20px;
+                        padding: 10px;
 
                         >p {
                             @include wh(100%, 100%);
