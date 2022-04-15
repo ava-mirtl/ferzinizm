@@ -1,3 +1,59 @@
+$back-color: rgb(0, 0, 0);
+$color: rgb(255, 255, 255);
+$main-font: 'Montserrat', sans-serif;
+$accent-color: #F64B35;
+
+.container-fluid {
+    background-color: $back-color;
+    color: $color;
+    font-family: $main-font;
+}
+.header-title {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 50% 50%;
+    justify-content: space-around;
+    padding: 4%;
+}
+.header-title__img {
+    display: flex;
+    max-width: 100%;
+    max-height: 100%;
+    box-shadow: 40px 40px 60px rgba(255, 255, 255, 0.15)
+
+}
+.header-title__text {
+    display: flex;
+    max-width: 50%;
+    justify-content: space-between;
+    flex-direction: column;
+    .header-title__subtitle {
+        font-size: 4.5vw;
+        font-weight: 600;
+        align-items: center;
+    }
+    p {
+        font-size: 1.6vw;
+        font-weight: 500;
+    }
+    span {
+        color: $accent-color;
+    }
+}
+
+.button {
+    max-width: 350px;
+    max-height: 60px;
+    background-color: $color;
+    border: none;
+    border-radius: 15px;
+    color: $back-color;
+    font-weight: 500;
+    padding: 12px 32px;
+    align-items: center;
+    display: inline-block;
+    font-size: 25px;
+}
 
 
 .event {
