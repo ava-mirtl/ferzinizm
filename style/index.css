@@ -20,6 +20,7 @@
           justify-content: space-evenly;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  /* анимация смещения и изменения цвета текста label */
 }
 
 .header-title__box .img {
@@ -37,7 +38,6 @@
   font-style: normal;
   font-weight: 600;
   font-size: 60px;
-  margin-bottom: 0px;
 }
 
 .header-title__box .header-title__text {
@@ -71,23 +71,47 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.header-title__box .header-title__txt {
+.header-title__box .header-subtitle {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
   font-size: 25px;
-  padding-top: 25px;
-  margin-bottom: 0px;
 }
 
-@media (max-width: 1000px) {
+.header-title__box .header-title__txt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  padding-top: 3%;
+}
+
+.header-title__box p, .header-title__box h2, .header-title__box h3 {
+  margin: 0;
+}
+
+@media (max-width: 1100px) and (min-width: 999px) {
+  .header-title__box .header-title-tit {
+    font-size: 40px;
+  }
+  .header-title__box .header-title-tit h2 {
+    margin: 0;
+  }
+}
+
+@media (max-width: 1100px) and (min-width: 999px) and (max-width: 1000px) {
   .header-title__box .header-title-tit {
     font-family: 'Montserrat';
     font-style: normal;
@@ -97,12 +121,12 @@
   .header-title__box .header-title__blok,
   .header-title__box .header-title__text {
     width: 50vw;
-    padding-top: 30px;
+    padding-top: 3%;
     padding-top: 0px;
   }
 }
 
-@media (max-width: 959px) {
+@media (max-width: 1100px) and (min-width: 999px) and (max-width: 959px) {
   .header-title__box .header-title-tit {
     font-family: 'Montserrat';
     font-style: normal;
@@ -114,10 +138,14 @@
     width: 70vw;
     padding-top: 30px;
     padding-top: 0px;
+    text-align: center;
+  }
+  .header-title__box .header-title__blok {
+    margin-bottom: 5%;
   }
 }
 
-@media (max-width: 685px) {
+@media (max-width: 1100px) and (min-width: 999px) and (max-width: 685px) {
   .header-title__box .header-title-tit {
     font-family: 'Montserrat';
     font-style: normal;
@@ -125,23 +153,22 @@
     font-size: 40px;
   }
   .header-title__box .header-title__blok,
-  .header-title__box .header-title__text {
+  .header-title__box .header-title__text, .header-title__box .header-subtitle {
     width: 70vw;
     padding-top: 30px;
     padding-top: 0px;
   }
 }
 
-/* Модальное окно */
-.modal-window {
+.header-title__box .modal-window {
   display: inline-block;
 }
 
-.modal-window > .modal-trigger {
+.header-title__box .modal-window > .modal-trigger {
   display: none;
 }
 
-.modal-window > .modal-trigger ~ .modal-overlay {
+.header-title__box .modal-window > .modal-trigger ~ .modal-overlay {
   top: 0;
   left: 0;
   opacity: 0;
@@ -152,10 +179,10 @@
   visibility: hidden;
   -webkit-transition: opacity 0.3s;
   transition: opacity 0.3s;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 255, 255, 0.856);
 }
 
-.modal-window > .modal-trigger ~ .modal-container {
+.header-title__box .modal-window > .modal-trigger ~ .modal-container {
   top: 50%;
   left: 50%;
   opacity: 0;
@@ -168,14 +195,13 @@
           transform: translate(-50%, -50%);
 }
 
-.modal-window > .modal-trigger:checked ~ .modal-overlay,
-.modal-window > .modal-trigger:checked ~ .modal-container {
+.header-title__box .modal-window > .modal-trigger:checked ~ .modal-overlay,
+.header-title__box .modal-window > .modal-trigger:checked ~ .modal-container {
   opacity: 1;
   visibility: visible;
 }
 
-/* Кнопка */
-.btn-modal {
+.header-title__box .btn-modal {
   color: black;
   cursor: pointer;
   line-height: 3rem;
@@ -188,24 +214,16 @@
   font-size: 20px;
 }
 
-.btn-modal:hover {
+.header-title__box .btn-modal:hover {
   background-color: #979797;
 }
 
-/* Содержимое модального окна */
-.modal-content {
-  overflow: hidden;
-  /*Для прокрутки в модальном окне надо поменять на overflow: auto и добавить высоту окна*/
-  background-color: #fff;
-}
-
-.modal-content .modal-content-header,
-.modal-content .modal-content-body {
+.header-title__box .modal-content .modal-content-header,
+.header-title__box .modal-content .modal-content-body {
   padding: 1rem 2rem;
 }
 
-/* Кнопка Закрыть */
-.modal-content .modal-content-footer {
+.header-title__box .modal-content .modal-content-footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -217,7 +235,7 @@
           justify-content: center;
 }
 
-.modal-content .modal-content-footer .item {
+.header-title__box .modal-content .modal-content-footer .item {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -225,16 +243,16 @@
   text-align: center;
 }
 
-.modal-content .modal-content-footer .item.action {
+.header-title__box .modal-content .modal-content-footer .item.action {
   background-color: #83bec5;
   cursor: pointer;
 }
 
-.modal-content .modal-content-footer .item.action:hover {
+.header-title__box .modal-content .modal-content-footer .item.action:hover {
   background-color: #aed9e1;
 }
 
-.header__form {
+.header-title__box .header__form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -244,14 +262,14 @@
           flex-direction: column;
 }
 
-label {
+.header-title__box label {
   display: block;
   letter-spacing: 4px;
   padding-top: 30px;
   text-align: center;
 }
 
-label .label-text {
+.header-title__box label .label-text {
   color: #9B9B9B;
   cursor: text;
   font-size: 15px;
@@ -263,8 +281,7 @@ label .label-text {
   transition: all 0.3s;
 }
 
-/* анимация смещения и изменения цвета текста label */
-label input:focus + .label-text {
+.header-title__box label input:focus + .label-text {
   color: #F0F0F0;
   font-size: 13px;
   margin-top: 10px;
@@ -272,7 +289,7 @@ label input:focus + .label-text {
   transform: translateY(-74px);
 }
 
-label input {
+.header-title__box label input {
   background-color: transparent;
   border: 0;
   border-bottom: 2px solid #4A4A4A;
@@ -287,20 +304,18 @@ label input {
   width: 200px;
 }
 
-/* анимация, когда пользователь кликает по полю ввода */
-label input:focus {
+.header-title__box label input:focus {
   max-width: 100%;
   width: 400px;
 }
 
-label input:valid + .label-text {
+.header-title__box label input:valid + .label-text {
   font-size: 13px;
   -webkit-transform: translateY(-74px);
   transform: translateY(-74px);
 }
 
-/* стили кнопки */
-button {
+.header-title__box button {
   background: transparent;
   color: #F0F0F0;
   border: 2px solid black;
@@ -315,46 +330,15 @@ button {
   transition: all 0.4s;
 }
 
-button:hover,
-button:focus {
-  background-color: white;
+.header-title__box button:hover,
+.header-title__box button:focus {
+  background-color: #c5c5c5;
   color: #333333;
 }
 
 @media (max-width: 490px) {
-  .btn-modal {
+  .header-title__box .btn-modal {
     font-size: 20px;
   }
-}
-
-.footer__row {
-  border-top: 1px solid white;
-  padding: 4% 0;
-}
-
-.footer__row .footer__social {
-  text-align: right;
-  padding: 0;
-}
-
-.footer__row .footer__mail {
-  padding: 0;
-}
-
-.footer__row .footer__mail .footer__email {
-  color: white;
-  text-decoration: none;
-}
-
-.footer__row .footer__mail .footer__email :hover {
-  cursor: pointer;
-}
-
-.footer__row .footer__link {
-  margin-left: 2%;
-}
-
-.footer__pic {
-  max-width: 50px;
 }
 /*# sourceMappingURL=index.css.map */

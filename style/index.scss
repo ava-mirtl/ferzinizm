@@ -7,7 +7,6 @@ $fz: 25px;
 $fw: 500;
 .container-box {
     padding: 0 15px;
-  
     background-color: black;
     color: white;
     padding-top: 2%;
@@ -35,9 +34,7 @@ $fw: 500;
             font-style: normal;
             font-weight: 600;
             font-size: 60px; 
-            margin-bottom: 0px;
     }
-      
         .header-title__text{
         display: flex;
             flex-direction: column;
@@ -58,17 +55,34 @@ $fw: 500;
         }
         .header-title__blok{
             display: flex;
-            justify-content: space-around;
-            align-items: center;
+            flex-direction: column;
            
         }
-        .header-title__txt{
+        .header-subtitle{
             font-family: 'Montserrat';
             font-style: normal;
             font-weight: $fw;
             font-size: $fz;
-            padding-top: 25px;
-            margin-bottom: 0px;
+        }
+        .header-title__txt {
+            display: flex;
+            align-items: center;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: $fw;
+            font-size: $fz;
+            padding-top: 3%;
+        }
+        p, h2, h3{
+            margin: 0;
+        }
+        @media (max-width: 1100px) and (min-width: 999px){
+            .header-title-tit{
+                font-size: 40px; 
+                h2 {
+                    margin: 0;
+                }
+        
         }
         @media (max-width: 1000px) {
             .header-title-tit{
@@ -78,9 +92,9 @@ $fw: 500;
                 font-size: 50px; 
         }
         .header-title__blok,
-        .header-title__text{
+        .header-title__text {
             width: 50vw;
-            padding-top: 30px;
+            padding-top: 3%;
             padding-top: 0px;
             
         }
@@ -97,10 +111,10 @@ $fw: 500;
         .header-title__text{
             width: 70vw;
             padding-top: 30px;
-            padding-top: 0px;
-            
+            padding-top: 0px;  
+            text-align: center;
         }
-         
+        .header-title__blok{margin-bottom: 5%;}
         }
         @media (max-width: 685px) {
             .header-title-tit{
@@ -110,13 +124,11 @@ $fw: 500;
                 font-size: 40px; 
         }
         .header-title__blok,
-        .header-title__text{
+        .header-title__text, .header-subtitle{
             width: 70vw;
             padding-top: 30px;
             padding-top: 0px;
-            
         }
-          
         }
     }
 
@@ -139,7 +151,7 @@ $fw: 500;
     position: fixed;
     visibility: hidden;
     transition: opacity 0.3s;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.856);
 }
 
 .modal-window>.modal-trigger~.modal-container {
@@ -287,42 +299,9 @@ button {
 
 button:hover,
 button:focus {
-    background-color: white;
+    background-color: rgb(197, 197, 197);
     color: #333333;
 }
-@media(max-width: 490px) {
+@media (max-width: 490px) {
     .btn-modal{
-        font-size: 20px;
-
-    }
-    
-}
-
-    
-    
-.footer__row {
-    border-top: 1px solid white;
-    padding: 4% 0;
-    .footer__social{
-        text-align: right;
-        padding: 0;
-    }
-.footer__mail{
-    padding: 0;
-    .footer__email{
-        color: white;
-        text-decoration: none;
-        :hover{
-cursor: pointer;        }
-    }
-}
-    .footer__link{
-        margin-left: 2%;
-    }
-}
-
-.footer__pic{
-    max-width: 50px;
-    
-}
-
+        font-size: 20px;}}}
