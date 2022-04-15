@@ -3,10 +3,13 @@
   src: url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 }
 
-.container-fluid {
+.container {
   background-color: black;
   color: white;
+  max-width: 1305px;
+  padding: 0 15px;
   padding-top: 2%;
+  margin: 0 10%;
 }
 
 .rotate__text,
