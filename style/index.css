@@ -162,3 +162,63 @@ a:active {
   color: yellow;
 }
 /*# sourceMappingURL=index.css.map */
+
+
+.footer {
+  background-color: black;
+  color: white;
+  padding-top: 2%;
+}
+
+.footer img {
+  max-width: 60px;
+}
+
+.footer .footer__wrapper {
+  border-top: 1px solid white;
+  padding: 2% 15px;
+  margin: 0 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer .footer__wrapper .footer__mail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.footer .footer__wrapper .footer__email {
+  position: relative;
+  top: 20px;
+  margin-left: 3%;
+  color: white;
+  text-decoration: none;
+}
+
+.footer .footer__wrapper .footer__email .footer__email:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 450px) {
+  .footer__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    text-align: center;
+  }
+  .footer__mail {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }}

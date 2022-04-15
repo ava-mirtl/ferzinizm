@@ -1,3 +1,5 @@
+
+
 .event {
       background-color: black;
 }
@@ -185,4 +187,34 @@ a:active {
       color: green;
     }
 
-      
+.footer {
+background-color: black;
+color: white;
+padding-top: 2%;
+img {max-width: 60px;}
+.footer__wrapper {
+    border-top: 1px solid white;
+    padding: 2% 15px;
+    margin: 0 10%;
+    display: flex;
+    justify-content: space-between;
+    .footer__mail{display: flex;
+height: fit-content;
+}
+    .footer__email{
+        position: relative;
+        top: 20px;
+        margin-left: 3%;
+        color: white;
+        text-decoration: none;
+        .footer__email:hover{cursor: pointer;}}}}
+        @media (max-width: 450px) {
+            .footer__wrapper{
+            flex-direction: column;
+            align-content: center;
+            text-align: center;
+        }
+        .footer__mail{
+            align-self: center;
+        }}      
+
