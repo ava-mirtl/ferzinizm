@@ -82,13 +82,9 @@ $fontFam: 'Montserrat';
         @media screen and (max-width: 980px) {
             .questions__cards-flex1 {
                 margin-right: 0;
-                flex-basis: auto;
-                width: 90%;
             }
-        }
 
-        @media screen and (max-width: 980px) {
-            .questions__cards-flex2 {
+            .questions__cards-flex1, .questions__cards-flex2 {
                 flex-basis: auto;
                 width: 90%;
             }

@@ -53,11 +53,8 @@
       margin-right: 2%; }
     @media screen and (max-width: 980px) {
       .questions__container .questions__cards .questions__cards-flex1 {
-        margin-right: 0;
-        flex-basis: auto;
-        width: 90%; } }
-    @media screen and (max-width: 980px) {
-      .questions__container .questions__cards .questions__cards-flex2 {
+        margin-right: 0; }
+      .questions__container .questions__cards .questions__cards-flex1, .questions__container .questions__cards .questions__cards-flex2 {
         flex-basis: auto;
         width: 90%; } }
     .questions__container .questions__cards .questions__card {
