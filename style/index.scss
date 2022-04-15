@@ -10,13 +10,10 @@ $fontFam: 'Montserrat';
     height: $h;
 }
 
-.container {
+.container-fluid {
     background-color: black;
     color: white;
-    max-width: 1275px + 30;
-    padding: 0 15px;
     padding-top: 2%;
-    margin: 0 10%;
 }
 
 .rotate__text,
