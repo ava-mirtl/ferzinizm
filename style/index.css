@@ -102,61 +102,33 @@
   margin: 0;
 }
 
-@media (max-width: 1100px) and (min-width: 999px) {
+@media (max-width: 1100px) and (min-width: 686px) {
   .header-title__box .header-title-tit {
     font-size: 40px;
+    padding-top: 50px;
   }
   .header-title__box .header-title-tit h2 {
     margin: 0;
   }
-}
-
-@media (max-width: 1100px) and (min-width: 999px) and (max-width: 1000px) {
-  .header-title__box .header-title-tit {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 50px;
-  }
-  .header-title__box .header-title__blok,
-  .header-title__box .header-title__text {
-    width: 50vw;
-    padding-top: 3%;
-    padding-top: 0px;
+  .header-title__box .header-title__txt {
+    margin-bottom: 0px;
+    padding-top: 60px;
+    width: 60vw;
   }
 }
 
-@media (max-width: 1100px) and (min-width: 999px) and (max-width: 959px) {
+@media (max-width: 685px) and (min-width: 300px) {
   .header-title__box .header-title-tit {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 50px;
+    font-size: 30px;
+    padding-top: 50px;
   }
-  .header-title__box .header-title__blok,
-  .header-title__box .header-title__text {
-    width: 70vw;
-    padding-top: 30px;
-    padding-top: 0px;
-    text-align: center;
+  .header-title__box .header-title-tit h2 {
+    margin: 0;
   }
-  .header-title__box .header-title__blok {
-    margin-bottom: 5%;
-  }
-}
-
-@media (max-width: 1100px) and (min-width: 999px) and (max-width: 685px) {
-  .header-title__box .header-title-tit {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 40px;
-  }
-  .header-title__box .header-title__blok,
-  .header-title__box .header-title__text, .header-title__box .header-subtitle {
-    width: 70vw;
-    padding-top: 30px;
-    padding-top: 0px;
+  .header-title__box .header-title__txt {
+    margin-bottom: 0px;
+    padding-top: 60px;
+    width: 60vw;
   }
 }
 
@@ -336,9 +308,22 @@
   color: #333333;
 }
 
-@media (max-width: 490px) {
+@media (max-width: 1100px) and (min-width: 686px) {
+  .header-title__box .btn-modal {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 685px) and (min-width: 300px) {
+  .header-title__box .btn-modal {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 495px) {
   .header-title__box .btn-modal {
     font-size: 20px;
+    line-height: normal;
   }
 }
 /*# sourceMappingURL=index.css.map */
