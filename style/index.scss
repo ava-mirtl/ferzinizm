@@ -34,7 +34,8 @@ $fw: 500;
             font-family: 'Montserrat';
             font-style: normal;
             font-weight: 600;
-            font-size: 60px; 
+            font-size: 50px; 
+            
     }
         .header-title__text{
         display: flex;
@@ -42,6 +43,8 @@ $fw: 500;
             justify-content: space-around;
             align-items: center;
             width: 45%;
+            line-height: 1.5;
+            
              
         }
         .header-title__button{

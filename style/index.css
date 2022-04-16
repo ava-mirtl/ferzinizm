@@ -37,7 +37,7 @@
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
-  font-size: 60px;
+  font-size: 50px;
 }
 
 .header-title__box .header-title__text {
@@ -54,6 +54,7 @@
       -ms-flex-align: center;
           align-items: center;
   width: 45%;
+  line-height: 1.5;
 }
 
 .header-title__box .header-title__button {
