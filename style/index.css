@@ -1,3 +1,328 @@
+.questions__cards-flex1,
+.questions__cards-flex2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+}
+
+.rotate__text,
+.text {
+  color: black;
+  background: white;
+  border: 1px solid white;
+  border-radius: 10px;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  position: relative;
+}
+
+.rotate__text > p,
+.text > p {
+  width: 95%;
+}
+
+.rotate__text > p::after,
+.text > p::after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: calc(10% / 3);
+  top: calc(80% / 2);
+  width: 20px;
+  height: 20px;
+  background-image: url(../assets/img/plus.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.questions__container {
+  background-color: black;
+  color: white;
+  margin: 0 auto;
+  padding: 2% 0;
+  font-family: "Montserrat";
+  cursor: default;
+}
+
+.questions__container .questions__title {
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+  padding-bottom: 2%;
+}
+
+.questions__container .questions__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.questions__container .questions__cards a {
+  text-decoration: none;
+  color: #F64B35;
+  cursor: pointer;
+}
+
+.questions__container .questions__cards .questions__cards-flex1 {
+  margin-right: 2%;
+}
+
+@media screen and (max-width: 980px) {
+  .questions__container .questions__cards .questions__cards-flex1 {
+    margin-right: 0;
+  }
+  .questions__container .questions__cards .questions__cards-flex1, .questions__container .questions__cards .questions__cards-flex2 {
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+    width: 90%;
+  }
+}
+
+.questions__container .questions__cards .questions__card {
+  width: 100%;
+  margin: 10px auto;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+}
+
+.questions__container .questions__cards .questions__card:hover .rotate {
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+}
+
+.questions__container .questions__cards .questions__card:active .rotate {
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+}
+
+.questions__container .questions__cards .questions__card .rotate {
+  position: relative;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.questions__container .questions__cards .questions__card .rotate .rotate__text {
+  padding: 20px;
+  vertical-align: middle;
+}
+
+.questions__container .questions__cards .questions__card .rotate .rotate__text > p {
+  font-size: 28px;
+}
+
+.questions__container .questions__cards .questions__card .rotate .text {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.questions__container .questions__cards .questions__card .rotate .text .text__container {
+  padding: 10px;
+}
+
+.questions__container .questions__cards .questions__card .rotate .text .text__container > p {
+  margin: 0;
+  font-size: 20px;
+}
+
+@media screen and (min-width: 481px) and (max-width: 1200px) {
+  .questions__container .questions__cards .questions__card .rotate .text .text__container > p {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .questions__container .questions__cards .questions__card .rotate .text .text__container > p {
+    font-size: 16px;
+  }
+}
+
+.event {
+  background-color: black;
+}
+
+.event__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 1305px;
+  padding: 0 15px;
+  margin: 0 10%;
+  overflow: hidden;
+}
+
+.title__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 5% 0% 5% 0%;
+}
+
+.title__row-title {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 6vw;
+  line-height: 1em;
+  color: #FFFFFF;
+}
+
+.event1 {
+  /* unvisited link*/
+}
+
+.event1__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.event1__column1 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 100%;
+          flex: 0 1 100%;
+  margin: 2% 2% 2% 0%;
+}
+
+.event1__column1__column2 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 100%;
+          flex: 0 1 100%;
+  margin: 2% 0% 2% 2%;
+}
+
+.event1__column1__title {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2.2vw;
+  line-height: .5em;
+  color: #FFFFFF;
+}
+
+.event1__column1__text {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.8vw;
+  line-height: 1.2em;
+  color: #FFFFFF;
+  padding-top: 10%;
+  text-align: left;
+}
+
+.event1__column1__text p:last-child {
+  margin-bottom: 0%;
+}
+
+.event1__column1__btn {
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 5%;
+  color: black;
+  padding: 2% 2%;
+  text-align: center;
+  display: inline-block;
+  font-size: 1.6vw;
+  margin: 3% 0%;
+  cursor: crosshair;
+}
+
+.event1__column1__image {
+  width: 40px;
+  height: 30px;
+}
+
+.event1 .btn {
+  margin-top: 5%;
+}
+
+.event1 .event2__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.event1 .event2__column1 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 100%;
+          flex: 0 1 100%;
+  margin: 2% 2% 2% 0%;
+}
+
+.event1 .event2__title {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2.2vw;
+  line-height: .5em;
+  color: #FFFFFF;
+}
+
+.event1 .event2__text {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.8vw;
+  line-height: 1.2em;
+  color: #FFFFFF;
+  padding-top: 10%;
+  text-align: left;
+}
+
+.event1 .event2__text p:last-child {
+  margin-bottom: 0%;
+}
+
+.event1 .event2__column2 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 100%;
+          flex: 0 1 100%;
+  margin: 2% 0% 2% 2%;
+}
+
+.event1 a:link {
+  color: #000000;
+  text-decoration: none;
+}
+
 .footer {
   background-color: black;
   color: white;
