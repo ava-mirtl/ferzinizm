@@ -8,10 +8,7 @@
     <link rel="stylesheet" href="./style/index.css">
     <link rel="stylesheet" href="./style/normalize.css">
     <link rel="shortcut icon" href="./assets/img/logo.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="./style/index.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
     <title>Ферзинизм</title>
 </head>
 
@@ -67,9 +64,55 @@
                 <div class="event1__column1">
                     <div class="event1__image">
                         <img src="./assets/img/2022-04-07_14.26_1.png" width="100%" height="auto" alt="club games">
-
                     </div>
                 </div>
+    <header class="header container-box">
+        <div class="header-title__box">
+            <div class="header-title__img">
+                <img class="img" src="./assets/img/2022-04-0713.472.png" alt="club">
+            </div>
+            <div class="header-title__text">
+                <div class="header-title__title">
+                    <h3 class="header-subtitle">Привет!👋🙂</h3>
+                    <h2 class="header-title-tit">Это «Ферзинизм» - клуб для шахматных энтузиастов.</h2>
+                </div>
+                <div class="header-title__blok">
+                    <p class="header-title__txt">Мы создаём события, меняющие образ шахмат с томного и исключительного
+                        на разнообразный и
+                        доступный каждому. Здесь ты найдешь практику игры в дружелюбной атмосфере, нетворкинг, онлайн и
+                        офлайн турниры, образовательные мастер-классы и новые, неожиданные форматы мероприятий.</p>
+
+                    <p class="header-title__txt">Наше сообщество объединяет за доской начинающих, любителей и
+                        профессионалов. Стать участником
+                        может каждый!</p>
+                </div>
+
+                <div class="modal-window">
+                    <input type="checkbox" class="modal-trigger" id="modal-window">
+                    <label class="modal-overlay" for="modal-window"></label>
+                    <label class="btn-modal" for="modal-window">
+                        Вступить в клуб
+                    </label>
+                    <div class="modal-container">
+                        <div class="modal-content">
+                            <div class="modal-content-body">
+                                <form class="header__form" action="./mail.php" method="post">
+
+                                    <label>
+                                        <input name="name" id="name" type="text" required />
+                                        <div class="label-text">Full Name</div>
+                                    </label>
+                                    <label>
+                                        <input type="email" name="email" id="email" required />
+                                        <div class="label-text">Email</div>
+                                    </label>
+                                    <label>
+                                        <input type="tel" name="phone" id="phone" required />
+                                        <div class="label-text">Phone Number</div>
+                                    </label>
+                                    <button type="submit" value="Submit">Отправить</button>
+                                </form>
+                            </div>
                 <div class="event1__column2">
                     <div class="event1__body">
                         <div class="event1__title">Встречи клуба</div>
@@ -310,13 +353,6 @@
                         src="./assets/img/vk-icon.png" alt="vk icon"></a></div>
         </div>
     </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
-        integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
-        integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous">
-    </script>
 </body>
 
 </html>
