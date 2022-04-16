@@ -1,172 +1,45 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-.header {
-    &__top {
-        position: fixed;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 120px;
-        background-color: #000000;
-    }
-    &__wrap {
-        display: flex;
-        justify-content: space-between;
-        align-items: baseline;
-        height: 100%;
-        margin: 0 5%;
-        padding: 0 15px;
-    }
-    &__social {
-        display: flex;
-        gap: 1vw;
-    }
-    &__icon {
-        width: 80%;
-    }
-}
-.logo {
-
-    &__img {
-        max-width: 100%;
-        width: 90%;
-    }
-}
-.menu {
-    width: 60%;
-
-    &__list {
-        display: flex;
-        justify-content: space-around;
-        gap: 5%;
-        padding: 0;
-    }
-    &__item {
-        list-style: none;
-    }
-    &__link {
-        text-decoration: none;
+    .footer {
+        background-color: black;
         color: white;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 400;
-        font-size: 2vw;
-        white-space: nowrap;
-        transition: all .6s;
-        &:hover {
-            color: rgba(246, 75, 53, 1);
-            transition: 1s;
-        }
-    }
-    &__item-social {
-        display: none;
-    }
-    &__arrow {
-        display: none;
-    }
-}
-.hamb {
-    display: none;
-}
-.popup {
-    display: none;
-}
-@media(max-width: 875px) {
-    .header {
-        &__top {
-            height: 60px;
-        }
-        &__wrap {
-            align-items: center;
-        }
-        &__social {
-            display: none;
-        }
-    }
-    .menu {
-        display: none;
-        &__list {
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
+        padding-top: 2%;
+        img {max-width: 60px;}
+        .footer__wrapper {font-family: 'Montserrat', sans-serif;
+            font-size: 25px;
+            border-top: 1px solid white;
+            padding: 2% 0;
             margin: 0 10%;
-            padding-top: 10%;
-            width: 100%;
-        }
-        &__item {
-            border-bottom: 0.5px white solid;
-            padding-bottom: 1px;
             display: flex;
             justify-content: space-between;
+            .footer__mail{display: flex;
+        height: fit-content;
         }
-        &__item-social {
-            display: flex;
-            align-items: center;
-            gap: 19px;
-            padding-top: 5%;
-        }
-        &__link {
-            text-decoration: none;
-            color: white;
-            font-size: 25px;
-            &:hover {
-                color: rgba(246, 75, 53, 1);
-                transition: .2s;
-            }
-        }
-        &__arrow {
-            display: block;
-        }
-    }
-    .logo {
-        &__img {
-            max-width: 100%;
-            width: 60%;
-        }
-    }
-    .hamb {
-        display: flex;
-        align-items: baseline;
-
-        &__field {
-            padding: 10px;
-            cursor: pointer;
-        }
-    }
-    .bar {
-        display: block;
-        width: 35px;
-        height: 2px;
-        margin: 6px auto;
-        background-color: white;
-        transition: .2s;
-    }
-    .popup {
-        position: fixed;
-        top: 60px;
-        left: -100%;
-        width: 100%;
-        height: 100%;
-        background-color: #000000;
-        z-index: 100;
-        display: flex;
-        transition: .3s;
-    }
-    .open {
-        left: 0;
-    }
-    .hamb__field.active .bar:nth-child(2) {
-        opacity: 0;
-    }
-    .hamb__field.active .bar:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
-    }
-    .hamb__field.active .bar:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
-    }
-    body.noscroll {
-        overflow: hidden;
-    }
-}
+            .footer__email{
+                position: relative;
+                top: 20px;
+                margin-left: 3%;
+                color: white;
+                text-decoration: none;
+                .footer__email:hover{cursor: pointer;}}}}
+                @media (max-width: 768px){
+                    .footer__wrapper{
+                        img{max-width: 45px;}
+                    } 
+                    .footer .footer__wrapper .footer__email {font-size: 2.5vw;
+                        position: relative;
+                        top: 15px;
+                        margin-left: 3%;
+                        color: white;
+                        text-decoration: none;
+                    }
+                }
+                @media (max-width: 450px) {
+                .footer__wrapper img{max-width: 30px;}        
+                .footer .footer__wrapper .footer__email {font-size: 2.5vw;
+                    position: relative;
+                    top: 10px;
+                    margin-left: 3%;
+                    color: white;
+                    text-decoration: none;
+                }
+                }
+            
