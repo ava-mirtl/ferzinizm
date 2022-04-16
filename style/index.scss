@@ -1,172 +1,155 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-.header {
-    &__top {
-        position: fixed;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 120px;
-        background-color: #000000;
-    }
-    &__wrap {
-        display: flex;
-        justify-content: space-between;
-        align-items: baseline;
-        height: 100%;
-        margin: 0 5%;
-        padding: 0 15px;
-    }
-    &__social {
-        display: flex;
-        gap: 1vw;
-    }
-    &__icon {
-        width: 80%;
-    }
-}
-.logo {
 
-    &__img {
-        max-width: 100%;
-        width: 90%;
-    }
-}
-.menu {
-    width: 60%;
+$fontFam: 'Montserrat';
 
-    &__list {
-        display: flex;
-        justify-content: space-around;
-        gap: 5%;
-        padding: 0;
+// @font-face {
+//     font-family: Montserrat;
+//     src: url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+// }
+
+@mixin wh($w, $h) {
+    width: $w;
+    height: $h;
+}
+
+@mixin flex-b ($ds, $jc) {
+    display: $ds;
+    justify-content: $jc;
+}
+
+.questions__cards-flex1,
+.questions__cards-flex2 {
+    @include flex-b(flex, space-between);
+    flex-direction: column;
+    flex-basis: 40%;
+}
+
+.rotate__text,
+.text {
+    color: black;
+    background: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    position: relative;
+
+    >p {
+        width: 95%;
     }
-    &__item {
-        list-style: none;
-    }
-    &__link {
-        text-decoration: none;
-        color: white;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 400;
-        font-size: 2vw;
-        white-space: nowrap;
-        transition: all .6s;
-        &:hover {
-            color: rgba(246, 75, 53, 1);
-            transition: 1s;
-        }
-    }
-    &__item-social {
-        display: none;
-    }
-    &__arrow {
-        display: none;
+
+    >p::after {
+        content: "";
+        display: block;
+        position: absolute;
+        right: calc(10% / 3);
+        top: calc(80% / 2);
+        width: 20px;
+        height: 20px;
+        background-image: url(../assets/img/plus.png);
+        background-position: center;
+        background-repeat: no-repeat;
     }
 }
-.hamb {
-    display: none;
-}
-.popup {
-    display: none;
-}
-@media(max-width: 875px) {
-    .header {
-        &__top {
-            height: 60px;
-        }
-        &__wrap {
-            align-items: center;
-        }
-        &__social {
-            display: none;
-        }
+
+.questions__container {
+    background-color: black;
+    color: white;
+    margin: 0 auto;
+    padding: 2% 0;
+    font-family: $fontFam;
+    cursor: default;
+
+    .questions__title {
+        font-size: 40px;
+        font-weight: 600;
+        text-align: center;
+        padding-bottom: 2%;
     }
-    .menu {
-        display: none;
-        &__list {
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            margin: 0 10%;
-            padding-top: 10%;
-            width: 100%;
-        }
-        &__item {
-            border-bottom: 0.5px white solid;
-            padding-bottom: 1px;
-            display: flex;
-            justify-content: space-between;
-        }
-        &__item-social {
-            display: flex;
-            align-items: center;
-            gap: 19px;
-            padding-top: 5%;
-        }
-        &__link {
+
+    .questions__cards {
+        @include flex-b(flex, center);
+        flex-wrap: wrap;
+
+        a {
             text-decoration: none;
-            color: white;
-            font-size: 25px;
-            &:hover {
-                color: rgba(246, 75, 53, 1);
-                transition: .2s;
-            }
-        }
-        &__arrow {
-            display: block;
-        }
-    }
-    .logo {
-        &__img {
-            max-width: 100%;
-            width: 60%;
-        }
-    }
-    .hamb {
-        display: flex;
-        align-items: baseline;
-
-        &__field {
-            padding: 10px;
+            color: #F64B35;
             cursor: pointer;
         }
-    }
-    .bar {
-        display: block;
-        width: 35px;
-        height: 2px;
-        margin: 6px auto;
-        background-color: white;
-        transition: .2s;
-    }
-    .popup {
-        position: fixed;
-        top: 60px;
-        left: -100%;
-        width: 100%;
-        height: 100%;
-        background-color: #000000;
-        z-index: 100;
-        display: flex;
-        transition: .3s;
-    }
-    .open {
-        left: 0;
-    }
-    .hamb__field.active .bar:nth-child(2) {
-        opacity: 0;
-    }
-    .hamb__field.active .bar:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
-    }
-    .hamb__field.active .bar:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
-    }
-    body.noscroll {
-        overflow: hidden;
+
+
+        .questions__cards-flex1 {
+            margin-right: 2%;
+        }
+
+        @media screen and (max-width: 980px) {
+            .questions__cards-flex1 {
+                margin-right: 0;
+            }
+
+            .questions__cards-flex1, .questions__cards-flex2 {
+                flex-basis: auto;
+                width: 90%;
+            }
+        }
+
+        .questions__card {
+            width: 100%;
+            margin: 10px auto;
+            perspective: 1000px;
+
+            &:hover .rotate {
+                transform: rotateX(180deg);
+            }
+
+            &:active .rotate {
+                transform: rotateX(180deg);
+            }
+
+            .rotate {
+                position: relative;
+                transition: 0.5s;
+                transform-style: preserve-3d;
+
+                .rotate__text {
+                    padding: 20px;
+                    vertical-align: middle;
+
+                    >p {
+                        font-size: 28px;
+                    }
+                }
+
+                .text {
+                    @include wh(100%, 100%);
+                    @include flex-b(flex, center);
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    transform: rotateX(180deg);
+                    text-align: center;
+                    align-items: center;
+
+                    .text__container {
+                        padding: 10px;
+
+                        >p {
+                            margin: 0;
+                            font-size: 20px;
+                        }
+
+                        @media screen and (min-width: 481px) and (max-width: 1200px) {
+                            >p {
+                                font-size: 18px;
+                            }
+                        }
+
+                        @media screen and (max-width: 480px) {
+                            >p {
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
