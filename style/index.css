@@ -1,3 +1,4 @@
+
 .questions__cards-flex1,
 .questions__cards-flex2 {
   display: flex;
@@ -96,6 +97,7 @@
             @media screen and (max-width: 480px) {
               .questions__container .questions__cards .questions__card .rotate .text .text__container > p {
                 font-size: 16px; } }
+
 
 /*# sourceMappingURL=index.css.map */
 
@@ -273,4 +275,5 @@ a:link {
   }
 }
 /*# sourceMappingURL=index.css.map */
+
 
