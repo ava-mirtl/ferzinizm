@@ -1,3 +1,4 @@
+
 $fontFam: 'Montserrat';
 
 // @font-face {
@@ -152,3 +153,49 @@ $fontFam: 'Montserrat';
         }
     }
 }
+
+    .footer {
+        background-color: black;
+        color: white;
+        padding-top: 2%;
+        img {max-width: 60px;}
+        .footer__wrapper {font-family: 'Montserrat', sans-serif;
+            font-size: 25px;
+            border-top: 1px solid white;
+            padding: 2% 0;
+            margin: 0 10%;
+            display: flex;
+            justify-content: space-between;
+            .footer__mail{display: flex;
+        height: fit-content;
+        }
+            .footer__email{
+                position: relative;
+                top: 20px;
+                margin-left: 3%;
+                color: white;
+                text-decoration: none;
+                .footer__email:hover{cursor: pointer;}}}}
+                @media (max-width: 768px){
+                    .footer__wrapper{
+                        img{max-width: 45px;}
+                    } 
+                    .footer .footer__wrapper .footer__email {font-size: 2.5vw;
+                        position: relative;
+                        top: 15px;
+                        margin-left: 3%;
+                        color: white;
+                        text-decoration: none;
+                    }
+                }
+                @media (max-width: 450px) {
+                .footer__wrapper img{max-width: 30px;}        
+                .footer .footer__wrapper .footer__email {font-size: 2.5vw;
+                    position: relative;
+                    top: 10px;
+                    margin-left: 3%;
+                    color: white;
+                    text-decoration: none;
+                }
+                }
+
