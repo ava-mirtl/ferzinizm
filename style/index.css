@@ -102,7 +102,7 @@
   margin: 0;
 }
 
-@media (max-width: 1100px) and (min-width: 686px) {
+@media (max-width: 1000px) and (min-width: 686px) {
   .header-title__box .header-title-tit {
     font-size: 40px;
     padding-top: 50px;
@@ -151,7 +151,7 @@
   visibility: hidden;
   -webkit-transition: opacity 0.3s;
   transition: opacity 0.3s;
-  background-color: rgba(255, 255, 255, 0.856);
+  background-color: rgba(255, 255, 255, 0.96);
 }
 
 .header-title__box .modal-window > .modal-trigger ~ .modal-container {
@@ -216,12 +216,7 @@
 }
 
 .header-title__box .modal-content .modal-content-footer .item.action {
-  background-color: #83bec5;
   cursor: pointer;
-}
-
-.header-title__box .modal-content .modal-content-footer .item.action:hover {
-  background-color: #aed9e1;
 }
 
 .header-title__box .header__form {
@@ -242,7 +237,7 @@
 }
 
 .header-title__box label .label-text {
-  color: #9B9B9B;
+  color: black;
   cursor: text;
   font-size: 15px;
   line-height: 20px;
@@ -289,9 +284,10 @@
 
 .header-title__box button {
   background: transparent;
-  color: #F0F0F0;
+  color: black;
   border: 2px solid black;
-  font-size: 10px;
+  border-radius: 10px;
+  font-size: 15px;
   letter-spacing: 2px;
   padding: 20px 75px;
   text-transform: uppercase;

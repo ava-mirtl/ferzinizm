@@ -77,7 +77,7 @@ $fw: 500;
         p, h2, h3{
             margin: 0;
         }
-        @media (max-width: 1100px) and (min-width: 686px){
+        @media (max-width: 1000px) and (min-width: 686px){
             .header-title-tit{
                 font-size: 40px; 
                 h2 {
@@ -131,7 +131,7 @@ $fw: 500;
     position: fixed;
     visibility: hidden;
     transition: opacity 0.3s;
-    background-color: rgba(255, 255, 255, 0.856);
+    background-color: rgba(255, 255, 255, 0.96);
 }
 
 .modal-window>.modal-trigger~.modal-container {
@@ -189,13 +189,11 @@ $fw: 500;
 }
 
 .modal-content .modal-content-footer .item.action {
-    background-color: #83bec5;
+   
     cursor: pointer;
 }
 
-.modal-content .modal-content-footer .item.action:hover {
-    background-color: #aed9e1;
-}
+
 .header__form{
     display: flex;
     flex-direction: column;
@@ -210,7 +208,7 @@ label {
 }
 
 label .label-text {
-    color: #9B9B9B;
+    color: black;
     cursor: text;
     font-size: 15px;
     line-height: 20px;
@@ -264,9 +262,10 @@ label input:valid+.label-text {
 // стили кнопки 
 button {
     background: transparent;
-    color: #F0F0F0;
+    color: black;
     border: 2px solid black;
-    font-size: 10px;
+    border-radius: 10px;
+    font-size: 15px;
     letter-spacing: 2px;
     padding: 20px 75px;
     text-transform: uppercase;
