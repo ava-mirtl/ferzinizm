@@ -1,220 +1,44 @@
-
-
-.event {
-      background-color: black;
-}
-.event {
-
-		// .event__container
-
-		&__container {
-                  display: flex;
-                  flex-direction: column;
-                  max-width: 1275px + 30;
-                  padding: 0 15px;
-                  margin: 0 10%;
-                  overflow: hidden;
-                
-		}
-}
-.title {
-
-		// .title__row
-
-		&__row { 
-                  display: flex;
-                  justify-content: center;
-                  margin: 5% 0% 5% 0%;
-
-		}
-
-		// .title__row-title
-
-		&__row-title {
-                  font-family: 'Montserrat';
-                  font-style: normal;
-                  font-weight: 600;
-                  font-size: 6vw;
-                  line-height: 1em;
-                  color: #FFFFFF;
-                  
-		}
-}
-.event1 {
-
-		// .event1__row
-
-		&__row {
-                  display:flex;                                
-		}
-
-		// .event1__column1
-
-		&__column1 {
-                  flex:0 1 100%;
-                  margin:2% 2% 2% 0%;
-
-		// .event1__column2
-
-		&__column2 {
-                  flex:0 1 100%;
-                  margin:2% 0% 2% 2%;
-		}
-
-		// .event1__title
-
-		&__title {
-
-                  font-family: 'Montserrat';
-                  font-style: normal;
-                  font-weight: 500;
-                  font-size: 2.2vw;
-                  line-height: .5em;
-                  color: #FFFFFF;
-		}
-
-		// .event1__text
-
-		&__text {
-                  font-family: 'Montserrat';
-                  font-style: normal;
-                  font-weight: 500;
-                  font-size: 1.8vw;
-                  line-height: 1.2em;
-                  color: #FFFFFF;
-                  padding-top: 10%;
-                  text-align: left;
-		}
-
-            
-            &__text p:last-child {
-                  margin-bottom: 0%;
-                }
-
-                // .event1__btn
-            &__btn{
-            background-color: white;
-            border: 2px solid black;
-            border-radius: 5%;
-            color: black;
-            padding: 2% 2%;
-            text-align: center;
-            display: inline-block;
-            font-size: 1.6vw;
-            margin: 3% 0%;
-            cursor:crosshair;
-            }
-
-            &__image{
-                  width: 40px, 
-                  height: 30px; 
-            }
-
-      }
-
-.btn {
-      margin-top: 5%;   
-}
-      
-.event2 {
-
-		// .event2__row
-
-		&__row {
-                  display: flex;
-		}
-
-		// .event2__column1
-
-		&__column1 {
-                  flex:0 1 100%;
-                  margin:2% 2% 2% 0%;                 
-		}
-
-		// .event2__title
-
-		&__title {
-                  font-family: 'Montserrat';
-                  font-style: normal;
-                  font-weight: 500;
-                  font-size: 2.2vw;
-                  line-height: .5em;
-                  color: #FFFFFF;
-		}
-
-		// .event2__text
-
-		&__text {
-                  font-family: 'Montserrat';
-                  font-style: normal;
-                  font-weight: 500;
-                  font-size: 1.8vw;
-                  line-height: 1.2em;
-                  color: #FFFFFF;
-                  padding-top: 10%;
-                  text-align: left;
-		}
-
-            &__text p:last-child {
-                  margin-bottom: 0%;
-                }
-
-		// .event2__column2
-
-		&__column2 {
-                  flex:0 1 100%;
-                  margin:2% 0% 2% 2%;
-		}
-}
-/* unvisited link*/
-a:link {
-      color: blue($color: #000000);
-      text-decoration: none;
-    }
-    
-    /* visited link*/
-a:visited {
-      color: red;
-    }
-    
-    /* mouse over*/
-a:hover {
-      color: blue($color: #000000);
-    }
-    
-    /* selected link*/
-a:active {
-      color: green;
-    }
-
-.footer {
-background-color: black;
-color: white;
-padding-top: 2%;
-img {max-width: 60px;}
-.footer__wrapper {
-    border-top: 1px solid white;
-    padding: 2% 15px;
-    margin: 0 10%;
-    display: flex;
-    justify-content: space-between;
-    .footer__mail{display: flex;
-height: fit-content;
-}
-    .footer__email{
-        position: relative;
-        top: 20px;
-        margin-left: 3%;
+    .footer {
+        background-color: black;
         color: white;
-        text-decoration: none;
-        .footer__email:hover{cursor: pointer;}}}}
-        @media (max-width: 450px) {
-            .footer__wrapper{
-            flex-direction: column;
-            align-content: center;
-            text-align: center;
+        padding-top: 2%;
+        img {max-width: 60px;}
+        .footer__wrapper {font-family: 'Montserrat', sans-serif;
+            font-size: 25px;
+            border-top: 1px solid white;
+            padding: 2% 0;
+            margin: 0 10%;
+            display: flex;
+            justify-content: space-between;
+            .footer__mail{display: flex;
+        height: fit-content;
         }
-        .footer__mail{
-            align-self: center;
-        }}      
-
+            .footer__email{
+                position: relative;
+                top: 20px;
+                margin-left: 3%;
+                color: white;
+                text-decoration: none;
+                .footer__email:hover{cursor: pointer;}}}}
+                @media (max-width: 768px){
+                    .footer__wrapper{
+                        img{max-width: 45px;}
+                    } 
+                    .footer .footer__wrapper .footer__email {font-size: 2.5vw;
+                        position: relative;
+                        top: 15px;
+                        margin-left: 3%;
+                        color: white;
+                        text-decoration: none;
+                    }
+                }
+                @media (max-width: 450px) {
+                .footer__wrapper img{max-width: 30px;}        
+                .footer .footer__wrapper .footer__email {font-size: 2.5vw;
+                    position: relative;
+                    top: 10px;
+                    margin-left: 3%;
+                    color: white;
+                    text-decoration: none;
+                }
+                }
