@@ -639,7 +639,7 @@
 }
 
 .event1__image {
-  width: 40px;
+  width: 100%;
   height: 30px;
 }
 
@@ -657,7 +657,7 @@
   -webkit-box-flex: 0;
       -ms-flex: 0 1 100%;
           flex: 0 1 100%;
-  margin: 2% 2% 2% 0%;
+  margin: 21% 2% 2% 0%;
 }
 
 .event2__title {
@@ -822,7 +822,7 @@ a:link {
 }
 
 .questions__container .questions__cards .questions__card .rotate .rotate__text > p {
-  font-size: 28px;
+  font-size: 2vw;
 }
 
 .questions__container .questions__cards .questions__card .rotate .text {
@@ -851,18 +851,18 @@ a:link {
 
 .questions__container .questions__cards .questions__card .rotate .text .text__container > p {
   margin: 0;
-  font-size: 20px;
+  font-size: 1.2vw;
 }
 
 @media screen and (min-width: 481px) and (max-width: 1200px) {
   .questions__container .questions__cards .questions__card .rotate .text .text__container > p {
-    font-size: 18px;
+    font-size: 1.3vw;
   }
 }
 
 @media screen and (max-width: 480px) {
   .questions__container .questions__cards .questions__card .rotate .text .text__container > p {
-    font-size: 16px;
+    font-size: 1.2vw;
   }
 }
 
