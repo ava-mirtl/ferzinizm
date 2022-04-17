@@ -400,10 +400,10 @@
   text-align: left; }
 .event1__text p:last-child {
   margin-bottom: 0%; }
-.event1__btn {
+.event1__btn {    
+  border-radius: 10px;
   background-color: white;
   border: 2px solid black;
-  border-radius: 5%;
   color: black;
   padding: 2% 2%;
   text-align: center;
@@ -412,7 +412,7 @@
   margin: 3% 0%;
   cursor: crosshair; }
 .event1__image {
-  width: 40px;
+  width: 100%;
   height: 30px; }
 
 .btn {
