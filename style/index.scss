@@ -178,12 +178,14 @@
 
 $fz: 25px;
 $fw: 500;
+
 .container-box {
-    padding: 0 15px;
     background-color: black;
     color: white;
-    padding-top: 2%;
-    margin-top: 120px;
+    max-width: 1275px + 30;
+    padding: 0 15px;
+    margin: 0 10%;
+    padding-top: 200px;
 }
 
 .header-title__box{

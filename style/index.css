@@ -224,11 +224,12 @@
 }
 
 .container-box {
-  padding: 0 15px;
   background-color: black;
   color: white;
-  padding-top: 2%;
-  margin-top: 120px;
+  max-width: 1305px;
+  padding: 0 15px;
+  margin: 0 10%;
+  padding-top: 200px;
 }
 
 .header-title__box {
