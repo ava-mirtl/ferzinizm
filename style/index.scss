@@ -6,6 +6,7 @@
 .header {
     &__top {
         position: fixed;
+        z-index: 1;
         left: 0;
         top: 0;
         width: 100%;
@@ -618,6 +619,24 @@ $fontFam: 'Montserrat';
               flex-direction: column;
               flex-basis: 40%;
           }
+
+          .card-2 .rotate .text .text__container {
+            >p {
+                font-size: 14px !important;
+            }
+        
+            @media screen and (min-width: 481px) and (max-width: 1200px) {
+                >p {
+                    font-size: 13px !important;
+                }
+            }
+        
+            @media screen and (max-width: 480px) {
+                >p {
+                    font-size: 12px !important;
+                }
+            }
+        }
           
           .rotate__text,
           .text {
@@ -729,18 +748,18 @@ $fontFam: 'Montserrat';
           
                                   >p {
                                       margin: 0;
-                                      font-size: 20px;
+                                      font-size: 16px;
                                   }
           
                                   @media screen and (min-width: 481px) and (max-width: 1200px) {
                                       >p {
-                                          font-size: 18px;
+                                          font-size: 15px;
                                       }
                                   }
           
                                   @media screen and (max-width: 480px) {
                                       >p {
-                                          font-size: 16px;
+                                          font-size: 14px;
                                       }
                                   }
                               }

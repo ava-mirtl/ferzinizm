@@ -5,6 +5,7 @@
 
 .header__top {
   position: fixed;
+  z-index: 1;
   left: 0;
   top: 0;
   width: 100%;
@@ -406,14 +407,9 @@
   color: black;
   padding: 2% 2%;
   text-align: center;
-  line-height: 3rem;
   display: inline-block;
   font-size: 1.6vw;
   margin: 3% 0%;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 500;
-  border-radius: 10px;
   cursor: crosshair; }
 .event1__image {
   width: 40px;
@@ -460,6 +456,15 @@ a:link {
   flex-direction: column;
   flex-basis: 40%; }
 
+.card-2 .rotate .text .text__container > p {
+  font-size: 14px !important; }
+@media screen and (min-width: 481px) and (max-width: 1200px) {
+  .card-2 .rotate .text .text__container > p {
+    font-size: 13px !important; } }
+@media screen and (max-width: 480px) {
+  .card-2 .rotate .text .text__container > p {
+    font-size: 12px !important; } }
+
 .rotate__text,
 .text {
   color: black;
@@ -495,7 +500,7 @@ a:link {
     font-size: 40px;
     font-weight: 600;
     text-align: center;
-    padding: 5% 1% 3% 1%; }
+    padding-bottom: 2%; }
   .questions__container .questions__cards {
     display: flex;
     justify-content: center;
@@ -544,13 +549,13 @@ a:link {
             padding: 10px; }
             .questions__container .questions__cards .questions__card .rotate .text .text__container > p {
               margin: 0;
-              font-size: 20px; }
+              font-size: 16px; }
             @media screen and (min-width: 481px) and (max-width: 1200px) {
               .questions__container .questions__cards .questions__card .rotate .text .text__container > p {
-                font-size: 18px; } }
+                font-size: 15px; } }
             @media screen and (max-width: 480px) {
               .questions__container .questions__cards .questions__card .rotate .text .text__container > p {
-                font-size: 16px; } }
+                font-size: 14px; } }
 
 .footer {
   background-color: black;
