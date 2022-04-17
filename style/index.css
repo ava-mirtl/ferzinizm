@@ -226,10 +226,6 @@
 .container-box {
   background-color: black;
   color: white;
-  max-width: 1305px;
-  padding: 0 15px;
-  margin: 0 10%;
-  padding-top: 200px;
 }
 
 .header-title__box {
@@ -241,6 +237,10 @@
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  max-width: 1305px;
+  padding: 0 15px;
+  margin: 0 10%;
+  padding-top: 200px;
   /* анимация смещения и изменения цвета текста label */
 }
 
@@ -324,13 +324,18 @@
   margin: 0;
 }
 
-@media (max-width: 1000px) and (min-width: 686px) {
+@media (max-width: 1251px) and (min-width: 686px) {
   .header-title__box .header-title-tit {
     font-size: 40px;
     padding-top: 50px;
   }
   .header-title__box .header-title-tit h2 {
     margin: 0;
+  }
+  .header-title__box .header-title__box {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .header-title__box .header-title__txt {
     margin-bottom: 0px;
@@ -449,20 +454,21 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
 }
 
 .header-title__box label {
   display: block;
-  letter-spacing: 4px;
   padding-top: 30px;
-  text-align: center;
+  color: black;
 }
 
 .header-title__box label .label-text {
-  color: black;
   cursor: text;
   font-size: 15px;
-  line-height: 20px;
   text-transform: uppercase;
   -webkit-transform: translateY(-34px);
   transform: translateY(-34px);
@@ -491,6 +497,7 @@
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   width: 200px;
+  display: block;
 }
 
 .header-title__box label input:focus {
