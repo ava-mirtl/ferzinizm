@@ -531,6 +531,7 @@ a:link {
           padding: 20px;
           vertical-align: middle; }
           .questions__container .questions__cards .questions__card .rotate .rotate__text > p {
+            margin: 0;
             font-size: 28px; }
         .questions__container .questions__cards .questions__card .rotate .text {
           width: 100%;
