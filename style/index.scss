@@ -370,29 +370,31 @@ $fw: 500;
 .header__form{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    text-align: center;
    
 }
 
 label {
     display: block;
-    letter-spacing: 4px;
     padding-top: 30px;
-    text-align: center;
+    color: black;
 }
 
+
 label .label-text {
-    color: black;
     cursor: text;
     font-size: 15px;
-    line-height: 20px;
     text-transform: uppercase;
     -moz-transform: translateY(-34px);
     -ms-transform: translateY(-34px);
     -webkit-transform: translateY(-34px);
     transform: translateY(-34px);
     transition: all 0.3s;
+    
 }
 
+/* анимация смещения и изменения цвета текста label */
 label input:focus+.label-text {
     color: #F0F0F0;
     font-size: 13px;
@@ -415,8 +417,10 @@ label input {
     text-align: center;
     transition: all 0.3s;
     width: 200px;
+    display: block;
 }
 
+//анимация, когда пользователь кликает по полю ввода
 label input:focus {
     max-width: 100%;
     width: 400px;
@@ -430,6 +434,7 @@ label input:valid+.label-text {
     transform: translateY(-74px);
 }
 
+// стили кнопки 
 button {
     background: transparent;
     color: black;
