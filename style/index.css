@@ -939,3 +939,173 @@ a:link {
   }
 }
 /*# sourceMappingURL=index.css.map */
+
+
+
+.container-fluid {
+  background-color: black;
+  color: white;
+  padding-top: 2%; }
+  .container-fluid .footer__row {
+    border-top: 1px solid white;
+    padding: 4% 0; }
+    .container-fluid .footer__row .footer__social {
+      text-align: right;
+      padding: 0; }
+    .container-fluid .footer__row .footer__mail {
+      padding: 0; }
+      .container-fluid .footer__row .footer__mail .footer__email {
+        color: white;
+        text-decoration: none; }
+        .container-fluid .footer__row .footer__mail .footer__email :hover {
+          cursor: pointer; }
+    .container-fluid .footer__row .footer__link {
+      margin-left: 2%; }
+
+.footer__pic {
+  max-width: 50px; }
+
+.bot {
+  background-color: #000000;
+  font-family: 'Montserrat', sans-serif; }
+
+.bot__container {
+  max-width: 90%;
+  margin: 0 auto;
+  color: white; }
+  .bot__container .bot__title {
+    font-size: 70px;
+    text-align: center;
+    font-weight: 600; }
+  .bot__container .bot__subtitle {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 20px; }
+  .bot__container .bot__grid-wrapper {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    margin: 0 auto;
+    width: 85%; }
+  .bot__container .bot__text-container {
+    font-size: 18px;
+    margin-left: -20px;
+    max-width: 700px;
+    padding-top: 20px; }
+  .bot__container .bot__img {
+    max-height: 850px; }
+  .bot__container .bot__btn {
+    background-color: #ffffff;
+    border: none;
+    color: black;
+    padding: 21px 116px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 15px; }
+  .bot__container .bot__button {
+    text-align: center;
+    padding: 50px 0px; }
+  .bot__container .bot__number {
+    max-height: 40px;
+    margin-bottom: -20px; }
+  .bot__container .bot__text-heading {
+    font-size: 30px; }
+  .bot__container .bot__text {
+    margin-bottom: 30px;
+    padding-top: 30px; }
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .bot__container {
+    max-width: 100%;
+    margin: 0 auto; }
+    .bot__container .bot__text-container {
+      margin-left: -50px;
+      margin-right: 30px; }
+    .bot__container .bot__img {
+      margin-left: -40px; }
+    .bot__container .bot__text-heading {
+      font-size: 28px; }
+    .bot__container .bot__text {
+      font-size: 18px; }
+    .bot__container .bot__number {
+      max-height: 30px;
+      margin-bottom: -15px; }
+    .bot__container .bot__title {
+      font-size: 50px; }
+    .bot__container .bot__subtitle {
+      font-size: 36px; }
+    .bot__container .bot__grid-wrapper {
+      width: 100%; } }
+@media screen and (min-width: 601px) and (max-width: 767px) {
+  .bot__container {
+    max-width: 100%;
+    margin: 0 auto; }
+    .bot__container .bot__text-container {
+      margin-left: -30px;
+      margin-right: 30px; }
+    .bot__container .bot__img {
+      margin-left: -40px; }
+    .bot__container .bot__text-container {
+      font-size: 16px;
+      margin-left: -50px; }
+    .bot__container .bot__btn {
+      padding: 15px 80px;
+      font-size: 20px;
+      margin: 4px 2px;
+      border-radius: 15px; }
+    .bot__container .bot__number {
+      max-height: 30px;
+      margin-bottom: -35px; }
+    .bot__container .bot__text-heading {
+      font-size: 26px; }
+    .bot__container .bot__text {
+      margin-bottom: 10px; }
+    .bot__container .bot__img {
+      max-height: 630px; }
+    .bot__container .bot__title {
+      font-size: 50px; }
+    .bot__container .bot__subtitle {
+      font-size: 36px; }
+    .bot__container .bot__grid-wrapper {
+      width: 100%; } }
+@media screen and (max-width: 600px) {
+  .bot__container {
+    max-width: 90%;
+    margin: 0 auto; }
+    .bot__container .bot__grid-wrapper {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto 1fr; }
+    .bot__container .bot__text-container {
+      font-size: 20px;
+      margin-left: 0px; }
+    .bot__container .bot__img {
+      display: none; }
+    .bot__container .bot__title {
+      font-size: 35px; }
+    .bot__container .bot__subtitle {
+      font-size: 28px; }
+    .bot__container .bot__img {
+      max-height: 450px;
+      justify-self: center; }
+    .bot__container .bot__btn {
+      padding: 15px 60px;
+      font-size: 20px;
+      margin: 4px 2px;
+      border-radius: 15px; }
+    .bot__container .bot__text-heading {
+      font-size: 25px; }
+    .bot__container .bot__number {
+      max-height: 30px;
+      margin-bottom: -20px; }
+    .bot__container .bot__text {
+      margin-bottom: 20px; }
+    .bot__container .bot__grid-wrapper {
+      width: 100%; }
+    .bot__container #text-hidden {
+      display: none; } }
+
+/*# sourceMappingURL=index.css.map */
