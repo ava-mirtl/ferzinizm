@@ -288,7 +288,6 @@ $fw: 500;
 
 }
 
-// Модальное окно
 .modal-window {
     display: inline-block;
 }
@@ -327,7 +326,6 @@ $fw: 500;
     visibility: visible;
 }
 
-//Кнопка 
 .btn-modal {
     color: black;
     cursor: pointer;
@@ -351,7 +349,6 @@ $fw: 500;
     padding: 1rem 2rem;
 }
 
-//Кнопка Закрыть 
 .modal-content .modal-content-footer {
     display: flex;
     align-items: center;
@@ -396,7 +393,6 @@ label .label-text {
     transition: all 0.3s;
 }
 
-/* анимация смещения и изменения цвета текста label */
 label input:focus+.label-text {
     color: #F0F0F0;
     font-size: 13px;
@@ -421,7 +417,6 @@ label input {
     width: 200px;
 }
 
-//анимация, когда пользователь кликает по полю ввода
 label input:focus {
     max-width: 100%;
     width: 400px;
@@ -435,7 +430,6 @@ label input:valid+.label-text {
     transform: translateY(-74px);
 }
 
-// стили кнопки 
 button {
     background: transparent;
     color: black;
@@ -468,7 +462,6 @@ button:focus {
         margin-top: 40px;
 
     }
-
 }
 @media (max-width: 495px) {
     .btn-modal{
@@ -480,9 +473,6 @@ button:focus {
             background-color: black;
       }
       .event {
-      
-              // .event__container
-      
               &__container {
                         display: flex;
                         flex-direction: column;
@@ -494,18 +484,12 @@ button:focus {
               }
       }
       .title {
-      
-              // .title__row
-      
               &__row { 
                         display: flex;
                         justify-content: center;
                         margin: 5% 0% 5% 0%;
       
               }
-      
-              // .title__row-title
-      
               &__row-title {
                         font-family: 'Montserrat';
                         font-style: normal;
@@ -517,28 +501,17 @@ button:focus {
               }
       }
       .event1 {
-      
-              // .event1__row
-      
               &__row {
                         display:flex;                                
               }
-      
-              // .event1__column1
-      
               &__column1 {
                         flex:0 1 100%;
-                        margin:2% 2% 2% 0%;}
-      
-              // .event1__column2
-      
+                        margin:2% 2% 2% 0%;
+                    }
               &__column2 {
                         flex:0 1 100%;
                         margin:2% 0% 2% 2%;
               }
-      
-              // .event1__title
-      
               &__title {
       
                         font-family: 'Montserrat';
@@ -548,9 +521,6 @@ button:focus {
                         line-height: .5em;
                         color: #FFFFFF;
               }
-      
-              // .event1__text
-      
               &__text {
                         font-family: 'Montserrat';
                         font-style: normal;
@@ -561,13 +531,9 @@ button:focus {
                         padding-top: 10%;
                         text-align: left;
               }
-      
-                  
                   &__text p:last-child {
                         margin-bottom: 0%;
                       }
-      
-                      // .event1__btn
                   &__btn{
                   background-color: white;
                   border: 2px solid black;
@@ -593,22 +559,15 @@ button:focus {
       }
             
       .event2 {
-      
-              // .event2__row
-      
+
               &__row {
                         display: flex;
               }
-      
-              // .event2__column1
-      
+
               &__column1 {
                         flex:0 1 100%;
                         margin:2% 2% 2% 0%;                 
               }
-      
-              // .event2__title
-      
               &__title {
                         font-family: 'Montserrat';
                         font-style: normal;
@@ -617,9 +576,6 @@ button:focus {
                         line-height: .5em;
                         color: #FFFFFF;
               }
-      
-              // .event2__text
-      
               &__text {
                         font-family: 'Montserrat';
                         font-style: normal;
@@ -634,26 +590,18 @@ button:focus {
                   &__text p:last-child {
                         margin-bottom: 0%;
                       }
-      
-              // .event2__column2
-      
+
               &__column2 {
                         flex:0 1 100%;
                         margin:2% 0% 2% 2%;
               }
       }
-      /* unvisited link*/
       a:link {
             color: #000000;
             text-decoration: none;
           }
 $fontFam: 'Montserrat';
 
-          // @font-face {
-          //     font-family: Montserrat;
-          //     src: url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-          // }
-          
           @mixin wh($w, $h) {
               width: $w;
               height: $h;
