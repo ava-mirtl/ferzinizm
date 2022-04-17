@@ -406,9 +406,14 @@
   color: black;
   padding: 2% 2%;
   text-align: center;
+  line-height: 3rem;
   display: inline-block;
   font-size: 1.6vw;
   margin: 3% 0%;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  border-radius: 10px;
   cursor: crosshair; }
 .event1__image {
   width: 40px;
