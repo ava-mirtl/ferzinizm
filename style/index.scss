@@ -189,8 +189,7 @@ $fw: 500;
     margin: 0 10%;
     padding-top: 150px;
 
-    .img{
-        width: 100%;
+    .img{width: 35vw;
     }
     
     .header-title-tit{
@@ -204,7 +203,7 @@ $fw: 500;
             flex-direction: column;
             justify-content: space-around;
             align-items: center;
-            width: 45%;
+            width: 35vw;
             line-height: 1.5; 
             padding-left: 100px;
         }
@@ -250,8 +249,8 @@ $fw: 500;
                 
                
             }
-            .header-title__img{
-                width: 60vw;
+            .img{
+                width: 80vw;
             }
             .header-subtitle{
                 text-align: center;
@@ -281,8 +280,8 @@ $fw: 500;
 .header-title__box{
     padding-top: 100px;
 }
-    .header-title__img{
-        width: 80vw;
+    .img{
+        width: 95vw;
     }
     .header-subtitle{
         text-align: center;
@@ -290,7 +289,7 @@ $fw: 500;
     }
     .header-title-tit{
         font-size: 30px; 
-        width: 80vw;
+        width: 95vw;
         text-align: center;
         h2 {
             margin: 0;
@@ -300,7 +299,7 @@ $fw: 500;
 .header-title__txt {
 margin-bottom: 0px;
 padding: 20px;
-width: 80vw;
+width: 95vw;
 text-align: center;
 
 }
@@ -1006,10 +1005,9 @@ $fontFam: 'Montserrat';
                                 .bot__text-container {
                                     font-size: 20px;
                                     margin-left: 0px;
+                                    text-align: center;
                                 }
-                                .bot__img {
-                                    display: none;
-                                }
+                                
                                 .bot__title {
                                     font-size: 35px;
                                 }
@@ -1017,7 +1015,7 @@ $fontFam: 'Montserrat';
                                     font-size: 28px;
                                 }
                                 .bot__img {
-                                    max-height: 450px;
+                                    max-height: 650px;
                                     justify-self: center;
                                 }
                                 .bot__btn {
