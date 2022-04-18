@@ -548,6 +548,7 @@
   }
 }
 
+/* блок События*/
 .event {
   background-color: #000000;
 }
@@ -573,9 +574,13 @@
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
-  font-size: 4vw;
-  line-height: 1.5em;
+  font-size: 6vw;
+  line-height: 1em;
   color: #FFFFFF;
+}
+
+.event1 {
+  background-color: black;
 }
 
 .event1__row {
@@ -619,8 +624,8 @@
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
-  font-size: 1.6vw;
-  line-height: 1.5em;
+  font-size: 1.4vw;
+  line-height: 1.2em;
   color: #FFFFFF;
   padding-top: 6%;
   text-align: left;
@@ -631,25 +636,22 @@
 }
 
 .event1__btn {
- 
+  margin: 3% 0%;
+  text-align: center;
   background-color: white;
   border: 2px solid black;
   border-radius: 15px;
-  width: 20vw; 
+  width: 40vw;
   height: 5vh;
-  padding: 2% 2%;
+  padding: 2% 5%;
   display: inline-block;
   font-size: 1.4vw;
-  margin: 3% 0%;
-  cursor:crosshair;  
-  font-family: 'Montserrat';
-  font-style: normal;
+  cursor: crosshair;
 }
 
 .event1__link {
+  color: #000000;
   text-decoration: none;
-  color:#000000;
-  text-align: center;
 }
 
 .event2__row {
@@ -693,8 +695,8 @@
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
-  font-size: 1.6vw;
-  line-height: 1.5em;
+  font-size: 1.4vw;
+  line-height: 1.2em;
   color: #FFFFFF;
   padding-top: 6%;
   text-align: left;
@@ -703,7 +705,6 @@
 .event2__text p:last-child {
   margin-bottom: 0%;
 }
-
 
 @media screen and (max-width: 768px) {
   .event1__row, .event2__row {
@@ -727,28 +728,27 @@
     justify-items: center;
   }
   .event1__text, .event2__text, .event1__btn {
-    font-size: 15px;;
+    font-size: 15px;
   }
   .event1__title, .event2__title {
     font-size: 20px;
     text-align: center;
   }
-  .title__row-title{
+  .event1__btn {
+    height: 100%;
+    width: 50%;
+  }
+  .title__row-title {
     font-size: 27px;
+  }
 }
-.event1__btn{
-  height: 100%;
-  width: 50%;
-}
-}
-@media screen and (min-width: 2160px) and (max-width:2560px){
-  .event__container{
+
+@media screen and (max-width: 768px) and (min-width: 2160px) and (max-width: 2560px) {
+  .event__container {
     max-width: 80%;
-    margin:0 auto;
+    margin: 0 auto;
   }
-  }
-  
-   
+}
 
 .questions__cards-flex1,
 .questions__cards-flex2 {
@@ -781,8 +781,6 @@
     font-size: 12px !important;
   }
 }
-
-
 
 .rotate__text,
 .text {
