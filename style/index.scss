@@ -581,13 +581,14 @@ button:focus {
                   text-align: center;
                   background-color: white;
                   border: 2px solid black;
-                  border-radius: 15px;
+                  border-radius: 13px;
                   padding: 2% 20%;
                   display: inline-block;
-                  font-size: 1.4vw;
-                  cursor:crosshair;               
-                  }
-                  
+                  font-size: 1.4vw;             
+                  }  
+                  &__btn:hover{
+                    background-color: #979797;
+                  }              
                   &__link{
                         color: #000000;
                         text-decoration: none;    

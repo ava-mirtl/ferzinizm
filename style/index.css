@@ -640,11 +640,14 @@
   text-align: center;
   background-color: white;
   border: 2px solid black;
-  border-radius: 15px;
+  border-radius: 13px;
   padding: 2% 20%;
   display: inline-block;
   font-size: 1.4vw;
-  cursor: crosshair;
+}
+
+.event1__btn:hover {
+  background-color: #979797;
 }
 
 .event1__link {
