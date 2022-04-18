@@ -230,7 +230,6 @@
 
 /*----------------------------------------------------------------------------*/
 .header-title__box {
-  padding-top: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -242,7 +241,7 @@
   max-width: 1305px;
   padding: 0 15px;
   margin: 0 10%;
-  padding-top: 150px;
+  padding-top: 15vh;
 }
 
 .header-title__box .img {
@@ -332,8 +331,9 @@
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     max-width: 1305px;
-    padding: 0 15px;
+    padding: 0px 15px;
     margin: 0 10%;
+    padding-top: 50px;
   }
   .header-title__box .img {
     width: 80vw;
@@ -364,7 +364,8 @@
 
 @media (max-width: 688px) and (min-width: 300px) {
   .header-title__box .header-title__box {
-    padding-top: 100px;
+    padding-top: 50px;
+    padding-top: 50px;
   }
   .header-title__box .img {
     width: 95vw;
@@ -596,7 +597,7 @@
 
 .event__container {
   max-width: 1305px;
-  padding: 0 15px;
+  padding: 50px 15px;
   margin: 0 10%;
   overflow: hidden;
 }
@@ -782,7 +783,7 @@
   }
   .event__container {
     max-width: 600px;
-    padding: 0px 15px;
+    padding: 50px 15px;
     margin: 0 10%;
     overflow: hidden;
     justify-items: center;
@@ -1109,7 +1110,7 @@
 
 .bot__container {
   max-width: 90%;
-  margin: 0 auto;
+  margin: 0px auto;
   color: white;
 }
 
@@ -1117,7 +1118,7 @@
   font-size: 70px;
   text-align: center;
   font-weight: 600;
-  padding-top: 15px;
+  padding-top: 50px;
 }
 
 .bot__container .bot__subtitle {
@@ -1137,13 +1138,13 @@
 
 .bot__container .bot__text-container {
   font-size: 18px;
-  margin-left: -20px;
-  max-width: 700px;
   padding-top: 20px;
+  max-width: 90vw;
 }
 
 .bot__container .bot__img {
   max-height: 850px;
+  max-width: 90vw;
 }
 
 .bot__container .bot__btn {

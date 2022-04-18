@@ -179,15 +179,14 @@ $fw: 500;
     color: white; 
 }
 /*----------------------------------------------------------------------------*/
-.header-title__box{padding-top: 200px;
-    
+.header-title__box{    
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     max-width: 1275px + 30;
-    padding: 0 15px;
+    padding: 150px 15px 0 15px;
     margin: 0 10%;
-    padding-top: 150px;
+}
 
     .img{width: 35vw;
     }
@@ -245,9 +244,8 @@ $fw: 500;
                 justify-content: center;
                 flex-wrap: wrap;
                 max-width: 1275px + 30;
-                padding: 0 15px;
-                margin: 0 10%;
-                
+                padding: 50px 15px 0 15px;
+                margin: 0 10%;}
                
             }
             .img{
@@ -279,7 +277,8 @@ $fw: 500;
     }
     @media (max-width: 688px) and (min-width: 300px){
 .header-title__box{
-    padding-top: 100px;
+    padding-top: 50px;
+    padding-top: 50px;
 }
     .img{
         width: 95vw;
@@ -477,7 +476,7 @@ button:focus {
     background-color: #000000;
     &__container {
     max-width: 1275px + 30;
-    padding: 0 15px;
+    padding: 50px 15px;
     margin: 0 10%;
     overflow: hidden;               
         }
@@ -618,7 +617,7 @@ button:focus {
         }
     .event__container {
         max-width: 600px;
-        padding: 0px 15px; 
+        padding: 50px 15px; 
         margin: 0 10%;
         overflow: hidden;
         justify-items: center;          
@@ -858,13 +857,14 @@ $fontFam: 'Montserrat';
                         }
                         .bot__container {
                             max-width: 90%;
-                            margin: 0 auto;
+                            margin: 0px auto;
                             color: white;
                             .bot__title {
+
                                 font-size: 70px;
                                 text-align: center;
                                 font-weight: 600;
-                                padding-top: 15px;
+                                padding-top: 50px;
                             }
                             .bot__subtitle {
                                 font-size: 50px;
@@ -879,12 +879,12 @@ $fontFam: 'Montserrat';
                             }
                             .bot__text-container {
                                 font-size: 18px;
-                                margin-left: -20px;
-                                max-width: 700px;
                                 padding-top: 20px;
+                                max-width: 90vw;
                             }
                             .bot__img {
                                 max-height: 850px;
+                                max-width: 90vw;
                             }
                             .bot__btn {
                                 background-color: #ffffff;
