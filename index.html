@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style/index.css">
     <link rel="stylesheet" href="./style/normalize.css">
     <link rel="shortcut icon" href="./assets/img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="./style/index.css">
@@ -20,31 +19,31 @@
         <div class="header__top">
             <div class="header__wrap" id="wrap">
                 <a class="logo" id="logo" href="#">
-                    <img class="logo__img" src="/assets/img/logo.png" alt="logo">
+                    <img class="logo__img" src="./assets/img/logo.png" alt="logo">
                 </a>
                 <nav class="menu">
                     <ul class="menu__list" id="menu">
                         <li class="menu__item"><a class="menu__link" href="#title">О нас</a><img class="menu__arrow"
-                                src="/assets/img/i-arrow.svg" alt="arrow"></li>
+                                src="./assets/img/i-arrow.svg" alt="arrow"></li>
                         <li class="menu__item"><a class="menu__link" href="#join">Вступить</a><img class="menu__arrow"
-                                src="/assets/img/i-arrow.svg" alt="arrow"></li>
+                                src="./assets/img/i-arrow.svg" alt="arrow"></li>
                         <li class="menu__item"><a class="menu__link" href="#event">События</a><img class="menu__arrow"
-                                src="/assets/img/i-arrow.svg" alt="arrow"></li>
+                                src="./assets/img/i-arrow.svg" alt="arrow"></li>
                         <li class="menu__item"><a class="menu__link" href="#bot">Бот</a><img class="menu__arrow"
-                                src="/assets/img/i-arrow.svg" alt="arrow"></li>
+                                src="./assets/img/i-arrow.svg" alt="arrow"></li>
                         <li class="menu__item-social">
                             <a class="menu__link" href="https://t.me/ferzinism" target="_blank"><img
-                                    class="header__icon" src="/assets/img/telegram-icon.png" alt="telegram icon"></a>
+                                    class="header__icon" src="./assets/img/telegram-icon.png" alt="telegram icon"></a>
                             <a class="menu__link" href="https://vk.com/ferzinism" target="_blank"><img
-                                    class="header__icon" src="/assets/img/vk-icon.png" alt="vk icon"></a>
+                                    class="header__icon" src="./assets/img/vk-icon.png" alt="vk icon"></a>
                         </li>
                     </ul>
                 </nav>
                 <div class="header__social">
                     <a class="header__icon-link" href="https://t.me/ferzinism" target="_blank"><img class="header__icon"
-                            src="/assets/img/telegram-icon.png" alt="telegram icon"></a>
+                            src="./assets/img/telegram-icon.png" alt="telegram icon"></a>
                     <a class="header__icon-link" href="https://vk.com/ferzinism" target="_blank"><img
-                            class="header__icon" src="/assets/img/vk-icon.png" alt="vk icon"></a>
+                            class="header__icon" src="./assets/img/vk-icon.png" alt="vk icon"></a>
                 </div>
                 <div class="hamb">
                     <div class="hamb__field" id="hamb">
@@ -119,73 +118,91 @@
             <div class="event__container">
                 <div class="title__row">
                     <div class="title__row-title">Наши события</div>
-                </div>               
-                <div class="event1__row">  
+                </div>
+                <div class="event1__row">
                     <div class="event1__column1">
-                        <div class="event__image"> 
-                            <img class="event1__image" src="./assets/img/встречи_клуба1.jpeg" width="100%" height="100%" alt="club games">
-                            </div>
-                        </div>
-                            <div class="event1__body">
-                                <div class="event1__title">Встречи клуба</div>
-                                <div class="event1__text">
-                                    <p>Присоединяйся к живой практике игры в уютных кафе и барах Москвы. Здесь ты познакомишься с новыми людьми и поиграешь в шахматы в расслабленной атмосфере выходного дня. </p>
-                                    <p>Кстати, мы стараемся придерживаться гендерного равенства, поэтому минимум 50% мест отведены шахматисткам.</p>
-                                </div>
-                                <button class="event1__btn">
-                                    <a class="event1__link" href="https://ferzinism.timepad.ru/event/1970842/">Занять доску</a>
-                                </button>
-                            </div>         
-                </div>               
-              
-                <div class="event2__row">
-                            <div class="event2__body">
-                                <div class="event2__title">Турниры</div>
-                                <div class="event2__text">
-                                    <p>Попробуй свои силы в онлайн и офлайн турнирах клуба! Мы проводим как традиционные, так и экспериментальные шахматные соревнования: индивидуальные зачеты по рапиду, блицу и классике, парные и командные турниры, а а также турниры с шахматными вариациями.</p> 
-                                    <p>Анонсы следующих турниров ты найдёшь в нашем <a href="https://telegram.me/ferzinism" style="color:#F64B35 ">телеграм канале</a>, а онлайн турниры — <a href="https://lichess.org/team/ferzinism" style="color:#F64B35 ">в сообществе на lichess.</a></p>
-                                </div>
-                            </div>              
-                        <div class="event2__column1">          
-                            <div class="event2__image">
-                                <img src="./assets/img/Турнир1.jpeg" width="100%" height="100%" alt="chess tournament">
-                            </div>
-                        </div>
-                </div>
-                    <div class="event1__row">
-                        <div class="event1__column1">
-                            <div class="event1__image">
-                                <img src="./assets/img/Мастер_класс1.jpeg" width="100%" height="100%" alt="master-class">
-                            </div>
-                        </div>
-                            <div class="event1__body">
-                                <div class="event1__title">Мастер-классы</div>
-                                <div class="event1__text">
-                                    <p>Научись играть с нуля или повысь свой текущий уровень на наших мастер-классах. Мы регулярно приглашаем тренеров провести групповые занятия на самые интересные и важные темы. Анонсы следующих занятий — в нашем <a href ="https://telegram.me/ferzinism" style="color:#F64B35 ">телеграм канале.</a></p> 
-                                    <p>А ещё, мы проводим частные мастер-классы на корпоративных мероприятиях, событиях тематических сообществ, днях рождениях и праздниках. Узнать подробности или предложить сотрудничество можно <a href="mailto:hello@ferzinism.ru" style="color:#F64B35 ">по имейлу.</a></p> 
-                            </div>
+                        <div class="event__image">
+                            <img class="event1__image" src="./assets/img/2022-04-07_14.26_1.png" width="100%"
+                                height="100%" alt="club games">
                         </div>
                     </div>
-                
-                <div class="event2__row">
-                            <div class="event2__body">
-                                <div class="event2__title">Специальные события</div>
-                                <div class="event2__text">
-                                    <p>Поддержка и продвижение шахматной культуры — одна из миссий нашего проекта. Специальные события клуба — это коллаборации с известными шахматистами, выступления и паблик-токи с гроссмейстерами или инфлюенсерами, а ещё интерактивные выставки, живые шахматы и многое, многое другое. </p> 
-                                    <p>Мы открыты к сотрудничеству!</p>
-                                    </div>
-                                    <button class="event1__btn">
-                                        <a class ="event1__link" href="mailto:hello@ferzinism.ru">Предложить идею</a>
-                                    </button>
-                                </div>
-                                <div class="event2__column1">
-                                    <div class="event2__image">
-                                        <img src="./assets/img/спец_события1.jpeg" width="100%" height="100%" alt="special events">
-                                    </div>
-                                </div>
-                            </div>                            
+                    <div class="event1__body">
+                        <div class="event1__title">Встречи клуба</div>
+                        <div class="event1__text">
+                            <p>Присоединяйся к живой практике игры в уютных кафе и барах Москвы. Здесь ты познакомишься
+                                с новыми людьми и поиграешь в шахматы в расслабленной атмосфере выходного дня. </p>
+                            <p>Кстати, мы стараемся придерживаться гендерного равенства, поэтому минимум 50% мест
+                                отведены шахматисткам.</p>
+                        </div>
+                        <button class="event1__btn">
+                            <a class="event1__link" href="https://ferzinism.timepad.ru/event/1970842/">Занять доску</a>
+                        </button>
                     </div>
                 </div>
+
+                <div class="event2__row">
+                    <div class="event2__body">
+                        <div class="event2__title">Турниры</div>
+                        <div class="event2__text">
+                            <p>Попробуй свои силы в онлайн и офлайн турнирах клуба! Мы проводим как традиционные, так и
+                                экспериментальные шахматные соревнования: индивидуальные зачеты по рапиду, блицу и
+                                классике, парные и командные турниры, а а также турниры с шахматными вариациями.</p>
+                            <p>Анонсы следующих турниров ты найдёшь в нашем <a href="https://telegram.me/ferzinism"
+                                    style="color:#F64B35 ">телеграм канале</a>, а онлайн турниры — <a
+                                    href="https://lichess.org/team/ferzinism" style="color:#F64B35 ">в сообществе на
+                                    lichess.</a></p>
+                        </div>
+                    </div>
+                    <div class="event2__column1">
+                        <div class="event2__image">
+                            <img src="./assets/img/2022-04-07_14.25_1.png" width="100%" height="100%"
+                                alt="chess tournament">
+                        </div>
+                    </div>
+                </div>
+                <div class="event1__row">
+                    <div class="event1__column1">
+                        <div class="event1__image">
+                            <img src="./assets/img/Events_pic7.jpeg" width="100%" height="100%" alt="master-class">
+                        </div>
+                    </div>
+                    <div class="event1__body">
+                        <div class="event1__title">Мастер-классы</div>
+                        <div class="event1__text">
+                            <p>Научись играть с нуля или повысь свой текущий уровень на наших мастер-классах. Мы
+                                регулярно приглашаем тренеров провести групповые занятия на самые интересные и важные
+                                темы. Анонсы следующих занятий — в нашем <a href="https://telegram.me/ferzinism"
+                                    style="color:#F64B35 ">телеграм канале.</a></p>
+                            <p>А ещё, мы проводим частные мастер-классы на корпоративных мероприятиях, событиях
+                                тематических сообществ, днях рождениях и праздниках. Узнать подробности или предложить
+                                сотрудничество можно <a href="mailto:hello@ferzinism.ru" style="color:#F64B35 ">по
+                                    имейлу.</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="event2__row">
+                    <div class="event2__body">
+                        <div class="event2__title">Специальные события</div>
+                        <div class="event2__text">
+                            <p>Поддержка и продвижение шахматной культуры — одна из миссий нашего проекта. Специальные
+                                события клуба — это коллаборации с известными шахматистами, выступления и паблик-токи с
+                                гроссмейстерами или инфлюенсерами, а ещё интерактивные выставки, живые шахматы и многое,
+                                многое другое. </p>
+                            <p>Мы открыты к сотрудничеству!</p>
+                        </div>
+                        <button class="event1__btn">
+                            <a class="event1__link" href="mailto:hello@ferzinism.ru">Предложить идею</a>
+                        </button>
+                    </div>
+                    <div class="event2__column1">
+                        <div class="event2__image">
+                            <img src="/assets/img/Events_pic9.jpeg" width="100%" height="100%" alt="special events">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <div class="questions__container">
             <div class="questions__title">ЧАСТЫЕ ВОПРОСЫ</div>
