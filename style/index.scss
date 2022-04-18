@@ -690,6 +690,7 @@ button:focus {
             .title__row-title{
                   font-size: 27px;
       }
+    }
             @media screen and (min-width: 2160px) and (max-width:2560px){
                   .event__container{
                     max-width: 80%;
@@ -697,7 +698,7 @@ button:focus {
                   }
             }
 
-        }
+      
 $fontFam: 'Montserrat';
 
           @mixin wh($w, $h) {
@@ -716,11 +717,13 @@ $fontFam: 'Montserrat';
               flex-direction: column;
               flex-basis: 40%;
           }
+          
 
           .card-2 .rotate .text .text__container {
             >p {
                 font-size: 14px !important;
             }
+        
         
             @media screen and (min-width: 481px) and (max-width: 1200px) {
                 >p {
