@@ -18,7 +18,7 @@
         justify-content: space-between;
         align-items: center;
         height: 100%;
-        margin: 0 10%;
+        margin: 0 8%;
         padding: 0 15px;
     }
     &__social {
@@ -469,10 +469,8 @@ button:focus {
     padding-top: 15px;
     padding-bottom: 15px;
         }}}
-/* блок События*/
 .event {
     background-color: #000000;
-     // .event__container
     &__container {
     max-width: 1275px + 30;
     padding: 0 15px;
@@ -481,13 +479,11 @@ button:focus {
         }
     }
     .title {
-    // .title__row
         &__row { 
         display: flex;
         justify-content: center;
         margin: 5% 0% 5% 0%;
         }
-        // .title__row-title
         &__row-title {
         font-family: 'Montserrat';
         font-style: normal;
@@ -502,29 +498,24 @@ button:focus {
     }
     .event1 {
     background-color: black;
-     // .event1__row
     &__row {
     display: flex; 
     justify-content: space-between;
     flex-wrap:wrap;                                               
     }
-    // .event1__column1
     &__column1 {
     width:  47%;
     margin:2% 2% 2% 0%;  
     }              
-    // .event1__body
     &__body{
     width: 47%;
     margin:2% 2% 2% 0%;           
     }
-    //.event1__image
     &__image {
     max-width: 100%;
     max-height: 100%;
     object-fit:cover;                                 
     }
-    // .event1__title
     &__title {
     font-family: 'Montserrat';
     font-style: normal;
@@ -533,7 +524,6 @@ button:focus {
     line-height: 1.5em;
     color: #FFFFFF;
     }
-      // .event1__text
     &__text {
     font-family: 'Montserrat';
     font-style: normal;
@@ -547,7 +537,6 @@ button:focus {
     &__text p:last-child {
     margin-bottom: 0%;
     }
-    // .event1__btn
     &__btn{
         font-family: 'Montserrat';
     margin: 3% 0%;
@@ -568,29 +557,24 @@ button:focus {
     }
     }
     .event2 {
-      // .event2__row
         &__row {
         display: flex; 
         justify-content: space-between;
         flex-wrap:wrap;  
             }
-     // .event2__column1
         &__column1 {
         width:  47%;
         margin:2% 2% 2% 0%;              
         }
-    // .event2__body
         &__body {
         width:  47%;
         margin:2% 2% 2% 0%;                
         }
-        // .event2__image
         &__image {
         max-width: 100%;
         max-height: 100%;
         object-fit:cover;              
         }
-    // .event2__title
     &__title {
     font-family: 'Montserrat';
     font-style: normal;
@@ -599,7 +583,6 @@ button:focus {
     line-height: 1.5em;
     color: #FFFFFF;
     }
-    // .event2__text
     &__text {
     font-family: 'Montserrat';
     font-style: normal;
