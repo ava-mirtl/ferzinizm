@@ -876,6 +876,7 @@ $fontFam: 'Montserrat';
                                 font-size: 70px;
                                 text-align: center;
                                 font-weight: 600;
+                                padding-top: 15px;
                             }
                             .bot__subtitle {
                                 font-size: 50px;
@@ -920,6 +921,7 @@ $fontFam: 'Montserrat';
                             }
                             .bot__text-heading {
                                 font-size: 30px;
+                                margin-bottom: 20px;
                             }
                             .bot__text {
                                 margin-bottom: 30px;
@@ -981,7 +983,7 @@ $fontFam: 'Montserrat';
                                 }
                                 .bot__number {
                                     max-height: 30px;
-                                    margin-bottom: -35px;
+                                    margin-bottom: -20px;
                                 }
                                 .bot__text-heading {
                                     font-size: 26px;
