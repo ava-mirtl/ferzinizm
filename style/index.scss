@@ -172,12 +172,13 @@
     font-family: Montserrat;
     src: url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 }
-$fz: 25px;
+$fz: 20px;
 $fw: 500;
 .container-box {
     background-color: black;
     color: white; 
 }
+/*----------------------------------------------------------------------------*/
 .header-title__box{
     display: flex;
     justify-content: center;
@@ -189,12 +190,7 @@ $fw: 500;
     .img{
         width: 100%;
     }
-    .header-title__title{
-        
-        padding-left: 10%;
-        padding-left: 0px;
-        text-align: center;
-    }
+    
     .header-title-tit{
             font-family: 'Montserrat';
             font-style: normal;
@@ -241,34 +237,62 @@ $fw: 500;
         p, h2, h3{
             margin: 0;
         }
-        @media (max-width: 1000px) and (min-width: 686px){
+        @media (max-width: 1252px) and (min-width: 686px){
+            .header-title__box {display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                max-width: 1275px + 30;
+                padding: 0 15px;
+                margin: 0 10%;
+                padding-top: 200px;
+            }
+            .header-title__img{
+                width: 60vw;
+            }
+            .header-subtitle{
+                text-align: center;
+                padding-top: 5%;
+            }
             .header-title-tit{
                 font-size: 40px; 
+                width: 80vw;
+                text-align: center;
                 h2 {
                     margin: 0;
                 }
-                padding-top: 50px;
+                padding-top: 40px;
         }
     .header-title__txt {
         margin-bottom: 0px;
-        padding-top: 60px;
-        width: 60vw;
+        padding: 20px;
+        width: 80vw;
+        text-align: center;
     }
     }
     @media (max-width: 685px) and (min-width: 300px){
-        .header-title-tit{
-            font-size: 30px; 
-            h2 {
-                margin: 0;
-            }
-            padding-top: 50px;
-    }
-.header-title__txt {
-    margin-bottom: 0px;
-    padding-top: 60px;
-    width: 60vw;
-}
 
+    .header-title__img{
+        width: 80vw;
+    }
+    .header-subtitle{
+        text-align: center;
+        padding-top: 5%;
+    }
+    .header-title-tit{
+        font-size: 30px; 
+        width: 80vw;
+        text-align: center;
+        h2 {
+            margin: 0;
+        }
+        padding-top: 30px;
+}
+.header-title__txt {
+margin-bottom: 0px;
+padding: 20px;
+width: 80vw;
+text-align: center;
+}
 }
 .modal-window {
     display: inline-block;
@@ -452,10 +476,13 @@ button:focus {
         font-family: 'Montserrat';
         font-style: normal;
         font-weight: 600;
-        font-size: 6vw;
+        font-size: 45px;
         line-height: 1em;
         color: #FFFFFF;                
         }
+    }
+    .event__link{
+        color: #F0F0F0;
     }
     .event1 {
     background-color: black;
@@ -671,7 +698,7 @@ $fontFam: 'Montserrat';
         font-family: $fontFam;
         cursor: default;
         .questions__title {
-        font-size: 40px;
+        font-size: 45px;
         font-weight: 600;
         text-align: center;
         padding-bottom: 2%;
