@@ -179,7 +179,8 @@ $fw: 500;
     color: white; 
 }
 /*----------------------------------------------------------------------------*/
-.header-title__box{
+.header-title__box{padding-top: 200px;
+    
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
