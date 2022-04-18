@@ -242,7 +242,7 @@
   max-width: 1305px;
   padding: 0 15px;
   margin: 0 10%;
-  padding-top: 200px;
+  padding-top: 150px;
 }
 
 .header-title__box .img {
@@ -320,7 +320,7 @@
   margin: 0;
 }
 
-@media (max-width: 1252px) and (min-width: 687px) {
+@media (max-width: 1252px) and (min-width: 688px) {
   .header-title__box .header-title__box {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -333,7 +333,6 @@
     max-width: 1305px;
     padding: 0 15px;
     margin: 0 10%;
-    padding-top: 200px;
   }
   .header-title__box .header-title__img {
     width: 60vw;
@@ -362,7 +361,10 @@
   }
 }
 
-@media (max-width: 686px) and (min-width: 300px) {
+@media (max-width: 688px) and (min-width: 300px) {
+  .header-title__box .header-title__box {
+    padding-top: 100px;
+  }
   .header-title__box .header-title__img {
     width: 80vw;
   }
