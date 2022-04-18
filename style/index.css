@@ -271,6 +271,7 @@
           align-items: center;
   width: 45%;
   line-height: 1.5;
+  padding-left: 100px;
 }
 
 .header-title__box .header-title__button {
@@ -319,7 +320,7 @@
   margin: 0;
 }
 
-@media (max-width: 1252px) and (min-width: 686px) {
+@media (max-width: 1252px) and (min-width: 687px) {
   .header-title__box .header-title__box {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -356,9 +357,12 @@
     width: 80vw;
     text-align: center;
   }
+  .header-title__box .header-title__text {
+    padding-left: 0px;
+  }
 }
 
-@media (max-width: 685px) and (min-width: 300px) {
+@media (max-width: 686px) and (min-width: 300px) {
   .header-title__box .header-title__img {
     width: 80vw;
   }
@@ -380,6 +384,9 @@
     padding: 20px;
     width: 80vw;
     text-align: center;
+  }
+  .header-title__box .header-title__text {
+    padding-left: 0px;
   }
 }
 
@@ -557,22 +564,26 @@
   color: #333333;
 }
 
-@media (max-width: 1100px) and (min-width: 686px) {
+@media (max-width: 1100px) and (min-width: 676px) {
   .header-title__box .btn-modal {
     margin-top: 40px;
   }
 }
 
-@media (max-width: 685px) and (min-width: 300px) {
+@media (max-width: 675px) and (min-width: 557px) {
   .header-title__box .btn-modal {
     margin-top: 40px;
+    font-size: 15px;
   }
 }
 
-@media (max-width: 495px) {
+@media (max-width: 556px) {
   .header-title__box .btn-modal {
-    font-size: 20px;
+    font-size: 15px;
     line-height: normal;
+    width: 210px;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
 }
 

@@ -187,6 +187,7 @@ $fw: 500;
     padding: 0 15px;
     margin: 0 10%;
     padding-top: 200px;
+
     .img{
         width: 100%;
     }
@@ -204,6 +205,7 @@ $fw: 500;
             align-items: center;
             width: 45%;
             line-height: 1.5; 
+            padding-left: 100px;
         }
         .header-title__button{
             width: 60%;
@@ -237,7 +239,7 @@ $fw: 500;
         p, h2, h3{
             margin: 0;
         }
-        @media (max-width: 1252px) and (min-width: 686px){
+        @media (max-width: 1252px) and (min-width: 687px){
             .header-title__box {display: flex;
                 justify-content: center;
                 flex-wrap: wrap;
@@ -267,9 +269,13 @@ $fw: 500;
         padding: 20px;
         width: 80vw;
         text-align: center;
+      
+    }
+    .header-title__text{
+        padding-left: 0px;
     }
     }
-    @media (max-width: 685px) and (min-width: 300px){
+    @media (max-width: 686px) and (min-width: 300px){
 
     .header-title__img{
         width: 80vw;
@@ -292,7 +298,13 @@ margin-bottom: 0px;
 padding: 20px;
 width: 80vw;
 text-align: center;
+
 }
+.header-title__text{
+    padding-left: 0px;
+}
+
+
 }
 .modal-window {
     display: inline-block;
@@ -438,20 +450,24 @@ button:focus {
     background-color: rgb(197, 197, 197);
     color: #333333;
 }
-@media (max-width: 1100px) and (min-width: 686px){
+@media (max-width: 1100px) and (min-width: 676px){
     .btn-modal{
         margin-top: 40px;
     }
 }
-@media (max-width: 685px) and (min-width: 300px){
+@media (max-width: 675px) and (min-width: 557px){
     .btn-modal{
         margin-top: 40px;
+        font-size: 15px;
     }
 }
-@media (max-width: 495px) {
+@media (max-width: 556px) {
     .btn-modal{
-    font-size: 20px;
+    font-size: 15px;
     line-height: normal;
+    width: 210px;
+    padding-top: 15px;
+    padding-bottom: 15px;
         }}}
 /* блок События*/
 .event {
