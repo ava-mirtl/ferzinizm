@@ -646,14 +646,11 @@
   font-style: normal;
 }
 
-a:link {
+.event1__link {
   text-decoration: none;
   color:#000000;
   text-align: center;
-
 }
-
-
 
 .event2__row {
   display: -webkit-box;
