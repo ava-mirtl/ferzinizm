@@ -18,7 +18,7 @@
         justify-content: space-between;
         align-items: center;
         height: 100%;
-        margin: 0 5%;
+        margin: 0 10%;
         padding: 0 15px;
     }
     &__social {
@@ -398,7 +398,6 @@ label .label-text {
     
 }
 
-/* анимация смещения и изменения цвета текста label */
 label input:focus+.label-text {
     color: #F0F0F0;
     font-size: 13px;
@@ -423,8 +422,6 @@ label input {
     width: 200px;
     display: block;
 }
-
-//анимация, когда пользователь кликает по полю ввода
 label input:focus {
     max-width: 100%;
     width: 400px;
@@ -437,8 +434,6 @@ label input:valid+.label-text {
     -webkit-transform: translateY(-74px);
     transform: translateY(-74px);
 }
-
-// стили кнопки 
 button {
     background: transparent;
     color: black;

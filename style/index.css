@@ -17,7 +17,7 @@
   justify-content: space-between;
   align-items: center;
   height: 100%;
-  margin: 0 5%;
+  margin: 0 10%;
   padding: 0 15px; }
 .header__social {
   display: flex;
@@ -155,8 +155,7 @@
   max-width: 1305px;
   padding: 0 15px;
   margin: 0 10%;
-  padding-top: 200px;
-  /* анимация смещения и изменения цвета текста label */ }
+  padding-top: 200px; }
   .header-title__box .img {
     width: 100%; }
   .header-title__box .header-title__title {
