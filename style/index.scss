@@ -582,9 +582,7 @@ button:focus {
                   background-color: white;
                   border: 2px solid black;
                   border-radius: 15px;
-                  width: 40vw; 
-                  height: 5vh;
-                  padding: 2% 5%;
+                  padding: 2% 20%;
                   display: inline-block;
                   font-size: 1.4vw;
                   cursor:crosshair;               
@@ -659,14 +657,20 @@ button:focus {
        }     
           
       @media screen and (max-width:768px){
-            .event1__row, .event2__row{
+            .event1__row{
                   display:flex;
                   flex-direction: column;    
                   flex-wrap: nowrap;   
                   margin: 0px auto;  
                   width: 210%;             
             }
-      
+            .event2__row{
+                display:flex;
+                  flex-direction: column-reverse;    
+                  flex-wrap: nowrap;   
+                  margin: 0px auto;  
+                  width: 210%; 
+            }
             .event__container {
                   max-width: 600px;
                   padding: 0px 15px; 
@@ -683,10 +687,7 @@ button:focus {
                   font-size: 20px;   
                   text-align: center;
             }
-            .event1__btn{
-                  height: 100%;
-                  width: 50%;
-                }
+          
             .title__row-title{
                   font-size: 27px;
       }
