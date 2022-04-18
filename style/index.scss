@@ -574,24 +574,27 @@ button:focus {
                         margin-bottom: 0%;
                       }
       
-                      // .event1__btn
+                  // .event1__btn
+
                   &__btn{
+                  margin: 3% 0%;
+                  text-align: center;
                   background-color: white;
                   border: 2px solid black;
-                  border-radius: 10px;
-                  color: black;
-                  padding: 2% 2%;
-                  text-align: center;
+                  border-radius: 15px;
+                  width: 40vw; 
+                  height: 5vh;
+                  padding: 2% 5%;
                   display: inline-block;
                   font-size: 1.4vw;
-                  margin: 3% 0%;
-                  cursor:crosshair;
+                  cursor:crosshair;               
                   }
             }
+      a:link {
+                  color: #000000;
+                  text-decoration: none;
+                }
       
-      .btn {
-            margin-top: 5%;   
-      }
        
       .event2 {
       
@@ -653,13 +656,6 @@ button:focus {
                         margin-bottom: 0%;
                       }
        }     
-                  
-      
-      /* unvisited link*/
-      a:link {
-            color: #000000;
-            text-decoration: none;
-          }
           
       @media screen and (max-width:768px){
             .event1__row, .event2__row{
@@ -679,29 +675,26 @@ button:focus {
             }
       
             .event1__text, .event2__text, .event1__btn{
-                  font-size: 2.4vw;
+                  font-size: 15px;
             }
       
             .event1__title, .event2__title{
-                  font-size: 2.8vw;   
+                  font-size: 20px;   
                   text-align: center;
             }
-      
-              
-            
-
-
-
-
-
-
-
-
-
-
-
-
-
+            .event1__btn{
+                  height: 100%;
+                  width: 50%;
+                }
+            .title__row-title{
+                  font-size: 27px;
+      }
+            @media screen and (min-width: 2160px) and (max-width:2560px){
+                  .event__container{
+                    max-width: 80%;
+                    margin:0 auto;
+                  }
+            }
 
   
 $fontFam: 'Montserrat';
