@@ -252,6 +252,7 @@
   font-style: normal;
   font-weight: 600;
   font-size: 45px;
+  padding-left: 20px;
 }
 
 .header-title__text {
@@ -269,7 +270,7 @@
           align-items: center;
   width: 35vw;
   line-height: 1.5;
-  padding-left: 100px;
+  padding-left: 20px;
 }
 
 .header-title__button {
@@ -319,20 +320,39 @@ p, h2, h3 {
   margin: 0;
 }
 
-@media (max-width: 1252px) and (min-width: 688px) {
-  .header-title__box {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    max-width: 1305px;
-    padding: 50px 15px 0 15px;
-    margin: 0 10%;
+@media (max-width: 1252px) and (min-width: 1000px) {
+  #header-title__box {
+    padding-top: 150px;
   }
+  .img {
+    width: 40vw;
+  }
+  .header-subtitle {
+    text-align: center;
+    padding-top: 5%;
+  }
+  .header-title-tit {
+    padding-left: 20px;
+    font-size: 25px;
+    width: 40vw;
+    text-align: center;
+  }
+  .header-title-tit h2 {
+    margin: 0;
+  }
+  .header-title__txt {
+    margin-bottom: 0px;
+    padding: 20px 20px 0 0;
+    width: 35vw;
+    text-align: center;
+    font-size: 15px;
+  }
+  .header-title__text {
+    padding-left: 0px;
+  }
+}
+
+@media (max-width: 999px) and (min-width: 689px) {
   #header-title__box {
     padding-top: 50px;
   }
@@ -340,23 +360,24 @@ p, h2, h3 {
     width: 80vw;
   }
   .header-subtitle {
-    text-align: center;
+    text-align: left;
     padding-top: 5%;
   }
   .header-title-tit {
-    font-size: 40px;
+    padding-left: 20px;
+    font-size: 25px;
     width: 80vw;
-    text-align: center;
-    padding-top: 40px;
+    text-align: left;
   }
   .header-title-tit h2 {
     margin: 0;
   }
   .header-title__txt {
     margin-bottom: 0px;
-    padding: 20px;
+    padding: 20px 20px 0 0;
     width: 80vw;
-    text-align: center;
+    text-align: left;
+    font-size: 15px;
   }
   .header-title__text {
     padding-left: 0px;
@@ -446,7 +467,7 @@ p, h2, h3 {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .btn-modal:hover {
@@ -547,7 +568,7 @@ label input:valid + .label-text {
   transform: translateY(-74px);
 }
 
-button {
+.btn__form {
   background: transparent;
   color: black;
   border: 2px solid black;
@@ -683,15 +704,17 @@ button:focus {
 }
 
 .event1__btn {
-  font-family: 'Montserrat';
   margin: 3% 0%;
   text-align: center;
   background-color: white;
   border: 2px solid black;
   border-radius: 13px;
-  padding: 2% 10%;
+  padding: 15px 10%;
   display: inline-block;
-  font-size: 1.4vw;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
 }
 
 .event1__btn:hover {
@@ -1163,6 +1186,8 @@ button:focus {
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 15px;
+  font-style: normal;
+  font-weight: 500;
 }
 
 .bot__container .bot__button {

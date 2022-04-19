@@ -196,6 +196,8 @@ $fw: 500;
             font-style: normal;
             font-weight: 600;
             font-size: 45px; 
+            padding-left: 20px;
+
     }
         .header-title__text{
         display: flex;
@@ -204,7 +206,7 @@ $fw: 500;
             align-items: center;
             width: 35vw;
             line-height: 1.5; 
-            padding-left: 100px;
+            padding-left: 20px;
         }
         .header-title__button{
             width: 60%;
@@ -239,41 +241,70 @@ $fw: 500;
         p, h2, h3{
             margin: 0;
         }
-        @media (max-width: 1252px) and (min-width: 688px){
-            .header-title__box {display: flex;
-                justify-content: center;
-                flex-wrap: wrap;
-                max-width: 1275px + 30;
-                padding: 50px 15px 0 15px;
-                margin: 0 10%;}
+        @media (max-width: 1252px) and (min-width: 1000px){
+           
             #header-title__box{
-                padding-top: 50px;
+                padding-top: 150px;
             }
             .img{
-                width: 80vw;
+                width: 40vw;
             }
             .header-subtitle{
                 text-align: center;
                 padding-top: 5%;
             }
             .header-title-tit{
-                font-size: 40px; 
-                width: 80vw;
+                padding-left: 20px;
+                font-size: 25px; 
+                width: 40vw;
                 text-align: center;
                 h2 {
                     margin: 0;
                 }
-                padding-top: 40px;
         }
     .header-title__txt {
         margin-bottom: 0px;
-        padding: 20px;
-        width: 80vw;
+        padding: 20px 20px 0 0;
+        width: 35vw;
         text-align: center;
+        font-size: 15px; 
+
     }
     .header-title__text{
         padding-left: 0px;
     }}
+    @media (max-width: 999px) and (min-width: 689px){
+           
+        #header-title__box{
+            padding-top: 50px;
+        }
+        .img{
+            width: 80vw;
+        }
+        .header-subtitle{
+            text-align: left;
+            padding-top: 5%;
+        }
+        .header-title-tit{
+            padding-left: 20px;
+            font-size: 25px; 
+            width: 80vw;
+            text-align: left;
+            h2 {
+                margin: 0;
+            }
+    }
+.header-title__txt {
+    margin-bottom: 0px;
+    padding: 20px 20px 0 0;
+    width: 80vw;
+    text-align: left;
+    font-size: 15px; 
+
+}
+.header-title__text{
+    padding-left: 0px;
+}}
     @media (max-width: 688px) and (min-width: 300px){
 .header-title__box{
     padding-top: 50px;
@@ -349,7 +380,7 @@ text-align: center;
     font-family: 'Montserrat';
             font-style: normal;
             font-weight: $fw;
-            font-size: 20px;
+            font-size: 25px;
             
 }
 .btn-modal:hover {
@@ -429,7 +460,7 @@ label input:valid+.label-text {
     -webkit-transform: translateY(-74px);
     transform: translateY(-74px);
 }
-button {
+.btn__form {
     background: transparent;
     color: black;
     border: 2px solid black;
@@ -538,15 +569,18 @@ button:focus {
     margin-bottom: 0%;
     }
     &__btn{
-        font-family: 'Montserrat';
+        
     margin: 3% 0%;
     text-align: center;
     background-color: white;
     border: 2px solid black;
     border-radius: 13px;
-    padding: 2% 10%;
+    padding: 15px 10%;
     display: inline-block;
-    font-size: 1.4vw;             
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: $fw;
+    font-size: 25px;            
     }  
     &__btn:hover{
     background-color: #979797;
@@ -898,6 +932,8 @@ $fontFam: 'Montserrat';
                                 margin: 4px 2px;
                                 cursor: pointer;
                                 border-radius: 15px;
+                                font-style: normal;
+                                font-weight: $fw;
                             }
                             .bot__button {
                                 text-align: center;
