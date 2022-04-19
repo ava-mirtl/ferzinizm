@@ -246,7 +246,8 @@ $fw: 500;
                 max-width: 1275px + 30;
                 padding: 50px 15px 0 15px;
                 margin: 0 10%;}
-               
+            #header-title__box{
+                padding-top: 50px;
             }
             .img{
                 width: 80vw;
@@ -269,12 +270,10 @@ $fw: 500;
         padding: 20px;
         width: 80vw;
         text-align: center;
-      
     }
     .header-title__text{
         padding-left: 0px;
-    }
-    }
+    }}
     @media (max-width: 688px) and (min-width: 300px){
 .header-title__box{
     padding-top: 50px;
@@ -306,8 +305,6 @@ text-align: center;
 .header-title__text{
     padding-left: 0px;
 }
-
-
 }
 .modal-window {
     display: inline-block;
@@ -471,7 +468,7 @@ button:focus {
     width: 210px;
     padding-top: 15px;
     padding-bottom: 15px;
-        }}}
+        }}
 .event {
     background-color: #000000;
     &__container {
@@ -606,14 +603,16 @@ button:focus {
         flex-direction: column;    
         flex-wrap: nowrap;   
         margin: 0px auto;  
-        width: 210%;             
-        }
+        width: 210%;
+        padding: 30px 0; 
+    }
     .event2__row{
         display:flex;
         flex-direction: column-reverse;    
         flex-wrap: nowrap;   
         margin: 0px auto;  
         width: 210%; 
+                padding: 30px 0;             
         }
     .event__container {
         max-width: 600px;
@@ -631,6 +630,7 @@ button:focus {
         }
     .title__row-title{
         font-size: 27px;
+        padding: 50px 0 0 0;
     }
     }
     @media screen and (min-width: 2160px) and (max-width:2560px){
