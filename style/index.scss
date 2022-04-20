@@ -209,15 +209,22 @@ $fw: 500;
             padding-left: 20px;
         }
         .header-title__button{
-            width: 60%;
-            border-radius: 10px;
-            padding-top: 5px;
-            padding-bottom: 5px;
+            margin: 3% 0%;
+            text-align: center;
+            background-color: white;
+            border: 2px solid black;
+            border-radius: 13px;
+            padding: 15px 10%;
+            display: inline-block;
             font-family: 'Montserrat';
             font-style: normal;
             font-weight: $fw;
             font-size: $fz;
         }
+        .header-title__button:hover{
+            background-color: #979797;
+                }  
+   
         .header-title__blok{
             display: flex;
             flex-direction: column;
@@ -310,6 +317,7 @@ $fw: 500;
     padding-top: 50px;
     padding-top: 50px;
 }
+
     .img{
         width: 95vw;
     }
@@ -336,40 +344,15 @@ text-align: center;
 .header-title__text{
     padding-left: 0px;
 }
+
+.header-title__button{
+    width: 250px;
+}
 }
 .modal-window {
-    display: inline-block;
-}
-.modal-window>.modal-trigger {
     display: none;
 }
-.modal-window>.modal-trigger~.modal-overlay {
-    top: 0;
-    left: 0;
-    opacity: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 100;
-    position: fixed;
-    visibility: hidden;
-    transition: opacity 0.3s;
-    background-color: rgba(255, 255, 255, 0.96);
-}
-.modal-window>.modal-trigger~.modal-container {
-    top: 50%;
-    left: 50%;
-    opacity: 0;
-    z-index: 110;
-    position: fixed;
-    visibility: hidden;
-    transition: opacity 0.3s;
-    transform: translate(-50%, -50%);
-}
-.modal-window>.modal-trigger:checked~.modal-overlay,
-.modal-window>.modal-trigger:checked~.modal-container {
-    opacity: 1;
-    visibility: visible;
-}
+
 .btn-modal {
     color: black;
     cursor: pointer;
@@ -383,6 +366,7 @@ text-align: center;
             font-size: 25px;
             
 }
+
 .btn-modal:hover {
     background-color: #979797;
 }
@@ -460,6 +444,7 @@ label input:valid+.label-text {
     -webkit-transform: translateY(-74px);
     transform: translateY(-74px);
 }
+
 .btn__form {
     background: transparent;
     color: black;
