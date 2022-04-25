@@ -426,6 +426,14 @@ p, h2, h3 {
   }
 }
 
+.modal-txt,
+.modal-content__txt {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+}
+
 .modal-window {
   position: fixed;
   width: 100%;
@@ -482,7 +490,7 @@ p, h2, h3 {
   position: absolute;
   width: 36px;
   height: 8px;
-  background: #8a1919;
+  background: #6a6868;
 }
 
 .madal-window__btn-clouse:before {
@@ -553,7 +561,10 @@ label {
 
 label .label-text {
   cursor: text;
-  font-size: 15px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
   text-transform: uppercase;
   -webkit-transform: translateY(-34px);
   transform: translateY(-34px);
